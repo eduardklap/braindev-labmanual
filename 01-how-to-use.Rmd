@@ -1,5 +1,8 @@
 # How to use this lab manual
 
+Eduard schrijft preface: info lab + links + foto; en doel van de manual  
+Dan hoofdstuk over how to use
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -23,3 +26,10 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Including scripts
+
+```{r script}
+x = 10
+y = 11
+```
