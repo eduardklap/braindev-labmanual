@@ -1,0 +1,134 @@
+# Publishing open access
+In the Brain and Development Research Center, we aim to make **all** of our publications open access via one or more of the routes described below (green route and sometimes the golden route, preprints are published whenever is deemed necessary by our researchers). Below, you can find background information and information for each route to open access publishing.
+
+## Background
+### What is open access publishing?
+Open access publishing means that everyone has access to your manuscripts, no matter where they are in the world and no matter if they have a journal subscription.
+
+### Why should I publish open access?
+-	Scientific work is often financed by public funds (tax payers) and therefore should be accessible to the general public
+-	Scientific results get more visible and their use is increased. This can eventually lead to a greater number of citations
+-	Some financers reward researchers that practice open science and sometimes require articles to be published open access (e.g., NWO, Horizon2020 and ERC)
+
+### Policies
+- On a **European** level, Plan S aims to make all research openly available (not only articles,
+but also books and other scientific output). See the Plan S principles [here](https://www.coalition-s.org/addendum-to-the-coalition-s-guidance-on-the-implementation-of-plan-s/principles-and-implementation/).
+- In the **Netherlands**, the National Plan Open Science ([NPOS](http://openscience.nl/en))
+also aims for 100% open access. In 2018, they planned to use institutional repositories
+for the green route to open access and to create more support and more openness in the costs
+of open access publishing.
+- The association of **universities** in the Netherlands (VSNU) also plays an important role in the
+transition towards open access. They are responsible for negotiating with publishers, starting collaborations, [communicating about open access](https://www.vsnu.nl/nl_NL/aanmelden-nieuwsbrief-open-access.html) and monitoring open access publications.
+- **Leiden University** stimulates open access and has appointed an [information point](https://www.library.universiteitleiden.nl/research-and-publishing/open-access) open access.
+
+## Routes to open access
+Publishing open access is possible via in **3 ways**:
+1. Green route: via an open access repository. Our policy is to **always** make our publications open access via this route.
+2. Golden route: via open access or hybrid journals. Our policy is to publish our publications open access via this route **where possible**.
+3. Publishing a **preprint** for quick dissemination of early work (not peer reviewed)
+
+These ways are **not** mutually exclusive at all and are explained below
+
+## Green route: publishing in a repository
+Publishing via the green route (sometimes called "self-archiving") entails making your publication available at a repository *besides* publishing it via a traditional journal. Repositories are freely accessible data storages of scientific articles and theses. Each repository should be registered in the Directory of Open Access Repositories ([OpenDOAR](https://v2.sherpa.ac.uk/opendoar/)). The repository of Leiden University is the [Leiden Repository](www.openaccess.leidenuniv.nl).
+
+N.B.: Even if you published your publication in an open access journal (golden route) and/or if your publication is available in a repository from another institution, Leiden University would like you to publish your publication in the Leiden repository as well, as long as there is at least one author affiliated to Leiden University.
+
+### Do publishers allow this?
+That depends on the version of your publication. A preprint, i.e., the version that you send to the journal before peer review, is always allowed (the repository will act as a preprint server). Sometimes, journals require an embargo period. Pay attention that you are not always allowed to publish the publisher version, i.e., the final version with your publisher’s layout and typeset. In many cases, you are only allowed to publish the **postprint** version, i.e., the final version (after peer review) without your publisher’s layout and typeset.
+
+### How do I know whether I can use the green route?
+You can check this in [Sherpa/Romeo](http://sherpa.ac.uk/romeo/index.php). Here, you can see which version of your article you may publish in a repository for each journal.
+Note: For articles published via the golden route, the publisher’s version may always be posted in a repository
+ 
+### Help with the green route
+- At the department of Developmental and Educational psychology Leiden, all publications are fed into the Leiden Repository by Esther van den Bos. Contact her if you have any questions.
+- Both [Leiden University](openaccess@library.leidenuniv.nl) and [Erasmus University Rotterdam](openaccess.library@eur.nl) have an open access team that you can contact for all kinds of questions related to open access publishing (e.g., policies, costs, practical, etc.).
+- In 2019, the pilot **["You share, we take care"](https://www.openaccess.nl/en/in-the-netherlands/you-share-we-take-care)** was successfully conducted which applies the Taverne amendment of the Dutch copyright law in order to publish all works open access after 6 months of the original publication date. Because of this success, the plan will be [more broadly implemented](https://vsnu.nl/en_GB/news-items.html/nieuwsbericht/554-groen-licht-voor-vervolg-vsnu-pilot-you-share-we-take-care).
+
+## Golden route: open access with a journal
+The gold route to open access means that you publish your publication in open access directly via a journal, making the contents of your publication accessible without any obstacles. Often, the author or institution pays an Article Processing Charge (APC) in order to make the article freely accessible immediately. In the Netherlands, large deals can often make sure that you don't have to pay this APC yourself!
+
+Publishing via the golden route can either go via an open access journal or in a hybrid journal. A hybrid journal still uses the traditional subscription model, but has added an open access option for which you need to pay extra. Since 2015, the NWO does not grant reimbursements anymore for publications in such hybrid journals. According to Plan S, the open access journals have to fulfill several requirements that you can find [here](https://www.coalition-s.org/implementation/).
+
+### Choosing a license
+Often times the journal requires you to choose from several creative commons licenses for your publication. The meaning of these licenses can be found [here](https://creativecommons.org/share-your-work/licensing-examples/). Aim for a license as open as possible, e.g., CC BY 4.0, CC BY-SA 4.0 or CC0. For questions about copyright, go to [this page](http://copyright.leidenuniv.nl/)
+or contact the [Leiden copyright information desk](auteursrecht@library.leidenuniv.nl).
+
+### Checking the quality of an (open access) journal
+How do you know whether or not you found a trustworthy (open access) journal for your publication? Please pay attention to the following requirements:
+- The journal has an ISSN (International Standard Serial Number).
+- The publisher is a member of the [Open Access Scholarly Publisher Association](https://oaspa.org/) and the journal is included in the [DOAJ](https://doaj.org/).
+-	The journal is connected to or is sponsored by a scientific institute or society.
+-	All articles have a DOI
+-	The journal is not part of this [list of dubious publishers](https://web.archive.org/web/20170112125427/https://scholarlyoa.com/publishers/)
+-	The content area of the journal is clearly described and the articles are in accordance with this description.
+-	The primary target group of the journal consists of researchers and scientific teachers and is mentioned on the website.
+-	The editorial board consists of renowned/well-known researchers from the discipline.
+-	The costs of publishing open access are clearly mentioned.
+-	The user licenses are clearly mentioned in each article
+- You can also check the scoring of the journal [here](http://www.qoam.eu/journals)
+
+### Golden route resources
+- Find which journals publish open access and which costs are covered by big deals in the [Open Access journal browser](http://library.wur.nl/WebQuery/jbrowser?q=*)
+- All Dutch publisher deals can be found [here](https://www.openaccess.nl/en/in-the-netherlands/publisher-deals)
+- All approved open access journals can be found in the [Directory of Open Access Journals](https://doaj.org/). In order to count as gold route, a journal has to be in this directory
+- A repository for open access books can be found in [OAPEN](http://oapen.org/home) and via [DOAB](https://www.doabooks.org/doab?uiLanguage=en) (Directory for Open Access Books)
+
+## Preprints
+### What are preprints?
+Preprints are pieces of research (often a manuscript) that have **not yet been peer reviewed** and published. You can consider them the “final draft” of your work that you and your co-authors feel confident sharing with the world. As preprints are open access, be sure to prepare your submission well, to protect your own reputation in the scientific community. See also [“How should I prepare for submission?”](https://help.osf.io/hc/en-us/articles/360019930493-Preprint-FAQs#how_should_i_prepare_for_submission).
+
+Please be aware that preprints could in theory be flawed because they are not peer reviewed. Therefore, after publication of the preprint, make sure you submit your work in a peer reviewed journal.
+
+### Why would I want to publish preprints?
+- **Speed**: By publishing preprints, you accelerate access to scientific discoveries to other researchers, funders and society. Preprints are publicly readable and do not take long to publish (besides some checks on scientific content and ethical compliance). This means your impact is immediate!
+-	**Greater reach/visibility**: because preprints are open access and many preprint servers are indexed by search engines (e.g., Google Scholar), the odds of reaching more people with your work increase. Some servers, such as bioRxiv, even tweet about all of their preprints, reaching many people at the same time, who may not even be in your discipline. This may especially be important if you have null results that are difficult to publish.
+-	**Feedback**: Another reason may be to get more input on your work: it is not the final version and is therefore already subject to change, so why not take advantage of that?
+-	**Prevent scooping**: preprints are timestamped, so by posting it, you have established precedence!
+-	**Individual benefits**: such as showing your productivity to the world, showing that you are open to feedback (i.e. open attitude), staking intellectual claims to the methods, results and ideas, etc.
+
+### Where should I publish a preprint?
+For example in OSF Preprints (not field specific, allows sharing supplementary files), or directly via BioRxiv, PsyArXiv or SocArXiv. You can even add a preprint on [ResearchGate](https://explore.researchgate.net/display/support/Preprints)! Choose whichever fits your topic and community best. A list of preprint servers hosted via OSF Preprints can be found **[here](https://osf.io/preprints/discover?subject=bepress%7CSocial%20and%20Behavioral%20Sciences)**.
+
+### How does providing feedback work?
+There are different ways researchers do this:
+-	In OSF preprints,  you can use their tool Hypothes.is to annotate preprints, see their [help guide](https://help.osf.io/hc/en-us/articles/360019738554-annotate-a-preprint)
+-	You can share contact information and send feedback to each other
+-	Some servers offer comment functionalities (e.g., when logged in)
+-	Use (academic) twitter
+
+What you do with feedback is completely up to you. My advice: focus on comments that you feel really do improve your work. You don’t have to reply to all comments of course, or perhaps even none at all!
+
+### Does my publisher allow publishing a preprint?
+Most of the time, yes. Preprints are officially not considered publications, so most journals accept preprinted works. You can always check your publisher’s policy at [Sherpa/Romeo](http://www.sherpa.ac.uk/romeo/index.php).
+
+### Can I update my preprint?
+Yes. Many servers allow multiple versions of the same work. Note however that **all versions are timestamped and retained**. Often new versions get a new identifier (DOI) and old versions cannot be removed!
+
+If your work gets published by a publisher, many preprint servers offer the possibility to refer to the identifier (DOI) of your published work, so that readers of the preprint get a notification that they are not reading the most up-to-date version. If you publish in [PLOS](https://www.plos.org/preprint-faq), they even link from the journal publication to the preprint.
+
+### Will my preprint always be accessible?
+Yes, preprints should receive a persistent identifier (often a DOI), allowing your work to be cited and to be accessible for a long time. Please note that they may be difficult to get removed, since once published, preprints are considered part of the scientific record.
+
+### How should I license my preprint?
+We encourage licensing to let others know how to use and share your work. For complete openness, we recommend a CC-BY-4.0 license. Otherwise, use [Choose a license](https://choosealicense.com/) or the [Creative Commons website](https://creativecommons.org/choose/).
+
+### How should I cite a preprint?
+Just like you are used to! Many preprints servers offer citation templates.
+Example: Uthor, A. (year). Title of preprint. NameOfPreprintServer, doi:doi.org/exampledoi.
+
+Note: at the moment most funders do not yet see preprints as “real” publications. While this is of course outrageous, it is recommended to still mention your preprints, perhaps in a different section or attachment, since they also represent work and should therefore be recognized as such!
+
+### Do I always have to publish a preprint before journal publishing?
+Of course not: you determine when to publish a preprint. Reasons for publishing a preprint can be:
+-	The journal in which you want to publish has too few open access options but you still want everyone to be able to read your work
+-	You want your work to be part of the scientific community fast
+-	You are looking for more feedback on your work than just the feedback provided by peer review
+-	You want to show how open science minded you are 12
+-	…
+
+### Preprint resources
+-	[Transpose](https://transpose-publishing.github.io/#/), a database of journal policies on peer review, co-reviewing and preprinting
+-	[Maggio et al., 2018](https://doi.org/10.1007/s40037-018-0451-8), a short article about preprints and the authors’ personal experience with publishing a preprint
+-	A [Preprint FAQ](https://help.osf.io/hc/en-us/articles/360019930493-Preprint-FAQs), including other relevant links

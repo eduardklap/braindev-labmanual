@@ -1,0 +1,186 @@
+# Data sharing
+
+In the Brain and Development Research Center, we aim to make as much of our data accessible as possible (at least Findable and Accessible, although we also aim for Interoperable and Reusable). However, this is not always possible, for example because of privacy concerns or lacking infrastructure.
+
+In this chapter, we will discuss:
+- How you can share data
+- On which conditions you can share your data
+- Some de-identifying and anonymization tools
+- Alternatives to data sharing
+- Choosing a license for your data
+
+## Sharing data
+Publishing data can go roughly in the following ways:
+
+##### 1. Supplementary materials to a published paper
+This is an often used method now, but is **not very findable or accessible**, especially if the paper is not published open access. Moreover, the data will not get its own persistent identifier and thus will not be [FAIR](https://www.go-fair.org/fair-principles/). Finally, there is often a limit to the size or number of supplementary files that a journal can host, limiting the possibilities to publish data.
+
+##### 2.	Publishing in data repositories
+For example:
+-	DANS [DataverseNL](https://dataverse.nl/) (Dutch)
+ - For all data and materials accompanying a publication
+ - Not suitable for large or publication-independent datasets
+- DANS [EASY](https://easy.dans.knaw.nl/ui/home) (Dutch)
+ - For data and materials, not necessarily accompanying a publication
+ - Has deals with the university but still some limitations to the size of the data
+ - Is aimed more at archiving than sharing data
+- [Neurovault](https://neurovault.org/)
+ - For group-MRI data (such as t-maps) accompanying a publication
+ - Enables meta-analysis of fMRI-studies
+- [Open Science Framework](https://osf.io/)
+  - max. 5 GB per file
+  - Keep your data close to all other relevant files in your OSF project
+  - OSF is more aimed at project management than dissemination, so it may not be ideal
+- Other general-purpose repositories, such as [Zenodo](https://zenodo.org/) (free up to 50GB), [Dryad](https://datadryad.org/) (not free) or [Figshare](https://figshare.com/) (free, max 20GB private space and 5GB per file)
+
+See for an overview of data repositories https://www.re3data.org/
+
+#### 3.	Publishing a datapaper
+You can also publish a dataset in a data journal without the need to add it to a publication. In a datapaper, you describe the data and the methods of collecting them, without the need to analyze them. This way you will get a publication out of your data irrespective of whether or not you publish results, increasing the impact of your research. However, it often requires that you make all described data public, because the aim of such publications is to provide access to high quality datasets and to facilitate reuse. Also, most journals have some policy in which repository you should deposit the data accompanying the datapaper. Note that a datapaper will be peer-reviewed just as well as a regular article.
+
+***Here: include link to the "data-journals.Rmd" file***
+```{r echo=FALSE}
+xfun::embed_file('_bookdown_files/_main_files/data-journals.Rmd')
+xfun::embed_file('data-journals.Rmd')
+````
+
+#### 4. Sharing case-by-case
+For data that cannot be shared publicly, you can sometimes still share the data case-by-case. This can be the case:
+- For MRI-data for which you have informed consent from the participants to share. You may not want to publish this publicly because of the sensitive nature of the data, but you can still share the data because you have consent. Of course this also goes for other kinds of sensitive data for which you have consent.
+- For data that does not belong to a publication, data that is too large to share in another way or some other reason
+
+###### What you can do
+- Use a data sharing agreement between you and the user of the data to make sure they will not try to identify your participants or do something else you don't want with the data
+- Send data safely via SURF filetransfer, share it in SURFdrive or use another form of encryption before you send data files
+
+## Privacy issues in data sharing
+**IN PROGRESS > TRANSLATE, SUMMARIZE AND ADD LINK TO STEPHAN"S GDPR DOC**
+
+### The GDPR  / AVG
+Since May 2018, the General Data Protection Regulation (Dutch: Algemene Verordening Gegevensbescherming) has been in place in order to better protect personal data. The most important aspects of the GDPR are:
+-	*Privacy by Design*: build privacy-increasing measures into your design
+-	*Privacy by Default*: make sure your default settings already improve your participants' privacy
+-	*Data minimization*: Only collect and use personal data necessary for your research goal (data minimization)
+-	*Lawful ground*: Make sure there is a lawful ground to process the personal data you collect (e.g., informed consent)
+-	*DPIA*: Conduct a Data Protection Impact Assessment whenever you collect (highly) sensitive data, such as names, addresses, race or health data.
+-	Inform participants about the goal of the personal data collection
+
+### What is personal data?
+Data is personal when you can identify someone by it, either directly (e.g., name, address) *or* indirectly (e.g., height, job, income, education). Indirect indicators are personal data if they can identify someone by their association or when *combining* such indicators so that they can only be applicable to one person. It is important to realize that such indicators may not only come from *your* data, but may also be publicly available! By law, data is considered identifiable when identification can occur with reasonable (proportionate) effort. Thus, it is **not** about the *hypothetical* possibility that data can be linked or combined.  Because not everyone has access to the same data, the defition of "identifiable" may differ per situation!
+
+### Special types of personal data
+- **Pseudonymous data**: Data that is only identifiable with a key (that still exists). This is the case when after encryption, it is still possible to identify someone, e.g., because the key or the source data still exist. Pseudonymous data are still considered **personal data** (but more protected than the "raw" personal data), because the encryption is **reversible**. So in order to process pseudonymous (and other personal) data, you need to base yourself on a lawful ground (most likely informed consent) and show your participants how and for what purpose their data are processed.
+
+- **Special personal data**: Difficult to anonymize personal data that directly refer to a person, e.g., DNA, a picture, health data, biometric data. Protecting these data requires additional measures.
+
+**NB FROM HERE ONWARDS, I STILL NEED TO TRANSLATE AND SHORTEN**
+- **Anonymous data**: Anonieme gegevens zijn gegevens die helemaal niet meer tot een persoon herleidbaar zijn:
+•	Re-identificatie is niet meer mogelijk, bijv. omdat de sleutel met de links van de nummers naar de naam is weggegooid of brondata zijn vernietigd: data kunnen niet meer in verband gebracht worden met personen.
+•	Het is onmogelijk om door het combineren van databases iemands identiteit te herleiden. Als je aan een antwoord kunt aflezen dat iemand een bepaalde ziekte heeft en die gegevens kunt combineren met andere kennis die kan leiden tot identificatie, is de data niet anoniem.
+
+Anonieme data vallen niet onder de AVG: ze worden niet als persoonsgegeven beschouwd en verwerking ervan is dus niet wettelijk beperkt. Wil je dus je onderzoeksdata met anderen delen, dan mag dat volgens de wet onbeperkt als de data helemaal anoniem zijn.
+
+Hoe kun je anonimiseren? Bijvoorbeeld:
+•	Identifiers verwijderen, bijv. naam of adres
+•	Identifiers vervangen, bijv. geboortedatum door leeftijdsgroepen vervangen
+•	Pseudoniemen gebruiken
+•	De bovenste en onderste ranges van een variabele beperken om outliers te verbergen, bijv. heel hoge salarissen. Dit soort outliers kunnen eventueel tot identificatie leiden, omdat er per definitie weinig van zijn
+
+Plan goed van tevoren hoe je je data gaat anonimiseren, behoud originele versies op een veilige plek en creëer een log van hoe je data hebt geanonimiseerd (vervangingen, verwijderen, etc.) apart van de data.
+
+ 
+#### Verwerking van persoonsgegevens onder de AVG
+Je mag persoonsgegevens alleen verwerken en eventueel delen als je je kunt beroepen op 1 van de volgende 6 grondslagen en die kunt verantwoorden, zie link:
+1.	De proefpersoon heeft expliciet toestemming gegeven met een van tevoren gespecificeerd doel. Onderzoekers beroepen zich op deze grondslag.
+Andere grondslagen:
+2.	Verwerking is noodzakelijk voor het uitvoeren van een publiekrechtelijke taak (bijv. algemeen belang of openbaar gezag). Het moet duidelijk zijn dat gegevens daarvoor worden verwerkt en verwerking moet noodzakelijk zijn voor het goed vervullen van de functie. Deze grondslag wordt ook nog wel eens gebruikt als men zich niet op de nummer 1 kunnen beroepen.
+3.	Verwerking is noodzakelijk voor het uitvoeren van een overeenkomst. De overeenkomst moet een ander doel hebben dan het verwerken van persoonsgegevens en enkel persoonsgegevens noodzakelijk voor de uitvoering van de overeenkomst zijn toegestaan.
+4.	Verwerking is noodzakelijk om aan een wettelijke verplichting te voldoen. Dit hoeft niet expliciet in de wet te staan: je moet zelf bepalen of verwerking van persoonsgegevens noodzakelijk is om aan de verplichting te voldoen.
+5.	Er is sprake van een gerechtvaardigd belang van de organisatie. Dit belang moet rechtmatig, duidelijk verwoord en aanwezig zijn. Verwerking moet noodzakelijk zijn om het gerechtvaardigd belang te behartigen:
+a.	Staat het in doel in verhouding tot de inbreuk op privacy?
+b.	Kan het doel niet op een minder nadelige manier bereikt worden?
+6.	Verwerking is noodzakelijk voor een vitaal belang, bijv. essentieel voor iemands leven of gezondheid wanneer je iemand niet om toestemming kunt vragen. Dit mag alleen als de verwerking niet op een andere rechtsgrond gebaseerd kan worden
+
+#### Verwerking van bijzondere persoonsgegevens onder de AVG
+De verwerking van bijzondere persoonsgegevens is verboden, tenzij er een specifieke uitzondering van toepassing is:
+•	de betrokkene heeft uitdrukkelijke toestemming gegeven waar geen enkele twijfel over bestaat. De handeling waarmee uitdrukkelijke toestemming gegeven wordt, moet specifiek zijn gericht op het geven van toestemming.
+•	de verwerking is noodzakelijk voor archivering in het algemeen belang, wetenschappelijk of historisch onderzoek of statistische doeleinden. Dit mag alleen als het onderzoek een algemeen belang dient, het vragen van uitdrukkelijke toestemming onmogelijk blijkt en voldoende waarborgen zijn getroffen om zo min mogelijk risico’s voor de persoonlijke levenssfeer van de betrokkene te creëren.
+Andere uitzonderingen:
+•	de verwerking is noodzakelijk in het kader van de uitvoering van regels op het gebied van arbeids- en sociale zekerheidsrecht.
+•	de verwerking is noodzakelijk ter bescherming van iemands vitale belangen.
+•	de verwerking wordt verricht door een stichting, vereniging of andere politieke, levensbeschouwelijke, godsdienstige of vakbondsinstantie zonder winstoogmerk.
+•	het gaat om persoonsgegevens die door de betrokkene openbaar zijn gemaakt.
+•	de verwerking is noodzakelijk voor instelling, uitoefening of onderbouwing van rechtspraak.
+•	de verwerking is noodzakelijk om redenen van zwaarwegend algemeen belang.
+•	de verwerking is noodzakelijk voor doeleinden van preventieve of arbeidsgeneeskunde, voor de beoordeling van de arbeidsgeschiktheid, diagnosen, het verstrekken van gezondheidszorg of sociale diensten of behandelingen of het beheren van gezondheidszorgstelsels en -diensten of sociale stelsels en diensten.
+•	de verwerking is noodzakelijk voor algemeen belang op het gebied van de  volksgezondheid.
+Persoonsgegevens delen met onderzoekers in het buitenland
+Persoonsgegevens (niet anonieme data) doorgeven aan/delen met het buitenland mag, mits:
+•	Je je kunt baseren op 1 van bovenstaande grondslagen (bijv. toestemming) EN
+•	Het beschermingsniveau van het betreffende land een adequaatheidsbeslissing heeft gekregen van de EU
+o	Landen binnen de EU, Noorwegen, Liechtenstein en IJsland hebben deze
+o	Landen buiten de EU die deze ook hebben zijn hier te vinden: https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en
+o	Heeft een land geen adequaatheidsbeslissing, dan moet je aanvullende waarborgen gebruiken, zoals standaard contractbepalingen (standard contractual clauses), overeenkomsten of verdragen
+
+Samengevat
+•	De AVG is bedoeld om persoonsgegevens te beschermen. Je moet duidelijk aangeven welke persoonsgegevens je verzamelt, wat je daarmee gaat doen en met wie je ze deelt. Daarnaast mag je niet meer data verzamelen dan nodig en moet je veiligheidsmaatregelen inbouwen.
+•	Anonieme data zijn geen persoonsgegevens en behoeven dus geen toestemming van proefpersonen: je mag alle verwerkingen die je wilt doen, dus ook delen;
+•	Persoonsgegevens, waaronder ook pseudonieme data en bijzondere persoonsgegevens, behoeven expliciete toestemming van proefpersonen voor elke verwerking die je ermee wilt doen, dus ook als je ze wilt delen met anderen;
+•	Het is belangrijk om goed te kijken of je data anoniem of pseudoniem is. Schakel hiervoor een privacy officer in.
+
+
+ 
+#### Als onderzoeker aan de slag met privacy
+1. Data management plan (DMP) en data protection impact assessment (DPIA),
+DMP
+Voorafgaand aan je onderzoek moet je altijd een data management plan (DMP) opstellen. Daarin stel je vast wat voor soort data je verzamelt en wat je ermee gaat doen (verwerkingen, opslag, delen). De Universiteitsbibliotheek kan je hiermee helpen en geeft ook trainingen datamanagement waar je je voor kunt opgeven.
+
+DPIA
+Als je gevoelige informatie verwerkt, zoals MRI-data, namen, adressen, daily diaries, etc., dan ben je ook verplicht om een data protection impact assessment (DPIA) in te vullen, waarin je privacyrisico’s identificeert en daarvoor maatregelen formuleert. Daarnaast registreer je welke gegevens er allemaal worden verzameld en wie waarvoor verantwoordelijk is. Voordat je je onderzoek start moet de DPIA zijn goedgekeurd door een privacy officer (privacy@fsw.leidenuniv.nl).
+
+Officieel moeten veranderingen in de loop van het onderzoek in nieuwe versies van de DPIA worden goedgekeurd. Ook moeten alle verschillende versies van de DPIA bewaard blijven. In de praktijk wordt dit echter nog niet gedaan. Als er projecten komen die onder het project vallen waar al een DPIA voor is opgesteld, hoef je niet opnieuw een DPIA op te stellen.
+
+Je kijkt in een DPIA naar:
+•	Samenwerkingen: waar wordt er samengewerkt?
+o	Binnen je instelling
+o	Tussen publieke instellingen: Maak afspraken over wie wanneer bij welke data mag en stem af welke technologieën worden ingezet voor o.a. de opslag en analyse van de data.
+o	Publiek-privaat, bijv. tussen een commercieel bedrijf en de universiteit. Maak contractuele afspraken over de omgang met data in alle onderzoeksfasen.
+•	Geografie: waar vindt je onderzoek plaats? Binnen je instelling? Binnen de EU? Of zelfs buiten de EU? Buiten de EU moeten er contractuele afspraken worden gemaakt over de omgang met data in alle onderzoeksfasen.
+•	Soort data:
+o	Automatisch gegenereerd: bijv. fitnesshorloges.
+o	Eigen creatie, bijv. interviews, opnames, foto’s.
+o	Hergebruikt, bijv. meerdere datasets aan elkaar gekoppeld. Let op dat deze data niet herleidbaar mogen zijn.
+
+Voor een korte introductie over privacy in onderzoek kun je de volgende online cursus doen: https://maken.wikiwijs.nl/125518/Privacy_in__Researc. De informatie uit deze cursus is echter ook in dit document verwerkt.
+
+2. Informed consent (IC)
+Als onderzoeker beroep je je op de grond dat proefpersonen toestemming geven voor het verwerken van hun persoonsgegevens. Let op dat je wettelijk geen toestemming hoeft te vragen voor het verwerken van data waarvan je zeker weet dat je die kunt anonimiseren (je vraagt wel toestemming voor het verzamelen ervan). Zie het document “20190611_Template_toestemmingsformulier_open_data_NL” hoe je een IC kunt opstellen in de context van de AVG.
+
+3. Anonimiseren
+De makkelijkste manier om data vrij te stellen van privacy-risico’s is door het te anonimiseren. Bij gedragsdata kun je denken aan:
+•	Vervangen geboortedatum door leeftijd
+•	Bepaal of verschillende maten gecombineerd kunnen leiden tot identificatie. Het is aan te raden een privacy officer hierbij te betrekken
+•	Randomiseer de proefpersoonnummers
+•	Gooi de naam-proefpersoonnummerkoppeling weg
+•	Defacen MRI-data
+•	Identificeer outliers en bepaal of die zo extreem zijn dat ze tot identificatie kunnen leiden
+
+Of data anoniem zijn of niet verschilt per onderzoek. Weet je niet zeker of je data echt anoniem zijn? Raadpleeg een privacy officer.
+
+4. Data delen
+Data delen mag als:
+•	Je data geheel anoniem zijn OF
+•	Je toestemming hebt gekregen van de proefpersoon
+
+Als data anoniem zijn, kun je je data in elk soort repository plaatsen. Let hierbij wel op of de data FAIR zijn en hoe duurzaam die repository is. Kosten kunnen ook een rol spelen.
+
+Als data niet anoniem zijn, maar je hebt wel toestemming gekregen om de data te delen, kun je data delen door middel van een data sharing agreement. Hierin staat onder andere wat de andere onderzoeker(s) wel en niet met de data mag/mogen doen en voor hoe lang en hoe je credit krijgt als diegene over jouw data publiceert. Een template van een data sharing agreement vind je hier: J:\ResearchData\FSW\Brain and Development\Open Science\Open data\Data sharing agreements.
+
+Met een data sharing agreement dek je je in tegen onethisch gebruik van je data. Als je niet-anonieme data zomaar in een repository zet (vaak onder een CC0-licentie), heb je minder controle over wat er met je data gebeurt en is het risico dat anderen proefpersonen kunnen identificeren groter.
+
+Contact over privacy
+•	Privacy FSW: Raymond van Erkel (r.van.erkel@fsw.leidenuniv.nl)
+•	Privacy UB: Ricardo Catalan (r.m.catalan@bb.leidenuniv.nl) en Astrid Gravenbeek (a.e.e.gravenbeek@bb.leidenuniv.nl), samen vormen zij het privacy servicepunt: privacy@bb.leidenuniv.nl  
+•	Privacy ISSC: Floran Pikaar (f.g.pikaar@issc.leidenuniv.nl)
+
+**PLUS: ADD NEUROVAULT INSTRUCTIONS (OR EMBED), DEIDENTIFYING MRI INFO (+ LINK TO OBC) + COPYRIGHTS**
