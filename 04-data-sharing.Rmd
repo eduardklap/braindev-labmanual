@@ -2,10 +2,14 @@
 
 In the Brain and Development Research Center, we aim to make as much of our data accessible as possible (at least Findable and Accessible, although we also aim for Interoperable and Reusable). However, this is not always possible, for example because of privacy concerns or lacking infrastructure.
 
+## Why share data?
+- It enables others to reproduce your results and can prevent fraud and honest mistakes in data analysis
+- It enables reuse of your data in work by other researchers, increasing the impact of your work
+
 ## When can I share my data?
 ### The GDPR  / AVG
 Since May 2018, the General Data Protection Regulation (Dutch: Algemene Verordening Gegevensbescherming) has been in place in order to better protect personal data. The most important aspects of the GDPR are:
--	*Privacy by Design*: build privacy-increasing measures into your design
+-	*Privacy by Design*: build privacy-increasing measures into your study design
 -	*Privacy by Default*: make sure your default settings already improve your participants' privacy
 -	*Data minimization*: Only collect and use personal data necessary for your research goal (data minimization)
 -	*Lawful ground*: Make sure there is a lawful ground (6 possible) to process (and share) the personal data you collect (e.g., informed consent or public interest [**PUT LINK LAWFUL GROUNDS HERE**]())
@@ -111,7 +115,14 @@ Anonymous data can be shared without restriction if they are **really** anonymou
 - [Data management and sharing tools](https://digitalscholarship.nl/rds/faculty/faculty-of-social-and-behavioural-sciences/) (list compiled by the Leiden University Library)
 
 
-
+## Resources
+- [The Turing Way - open data](https://the-turing-way.netlify.com/open_research/01/opendata.html)
+- [The Donders repository]()
+- [Privacy dos and donts](https://www.edugroepen.nl/sites/RDM_platform/RDM_Blog/SiteAssets/Presentatie%20Jacques_Flores_UU.pdf)
+- [Guide for sensitive data](https://www.openaire.eu/sensitive-data-guide)
+- [Legal instruments protecting data (agreements)](https://www.uu.nl/en/research/research-data-management/guides/legal-instruments-and-agreements)
+- [GDPR info](https://www.uu.nl/en/research/research-data-management/guides/handling-personal-data)
+- Info about Informed consents](https://www.uu.nl/en/research/research-data-management/guides/informed-consent-for-data-sharing)
 
 
 ## **IN PROGRESS. STILL TO DO**
