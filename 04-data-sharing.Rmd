@@ -9,10 +9,11 @@ In the Brain and Development Research Center, we aim to make as much of our data
 ## When can I share my data?
 ### The GDPR  / AVG
 Since May 2018, the General Data Protection Regulation (Dutch: Algemene Verordening Gegevensbescherming) has been in place in order to better protect personal data. The most important aspects of the GDPR are:
+
 -	*Privacy by Design*: build privacy-increasing measures into your study design
 -	*Privacy by Default*: make sure your default settings already improve your participants' privacy
 -	*Data minimization*: Only collect and use personal data necessary for your research goal (data minimization)
--	*Lawful ground*: Make sure there is a lawful ground (6 possible) to process (and share) the personal data you collect (e.g., informed consent or public interest [**PUT LINK LAWFUL GROUNDS HERE**]())
+-	*Lawful ground*: Make sure there is a lawful ground (6 possible) to process (and share) the personal data you collect (e.g., informed consent or public interest [more info (Dutch)](https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/algemene-informatie-avg/mag-u-persoonsgegevens-verwerken))
 -	*DPIA*: Conduct a Data Protection Impact Assessment whenever you collect (highly) sensitive data, such as names, addresses, race or health data.
 -	Inform participants about the goal of the personal data collection and which data you collect.
 
@@ -37,7 +38,8 @@ Data is personal when you can identify someone by it, either directly (e.g., nam
 - Determine whether different measures combined could lead to identification. If needed, consult a privacy officer
 
 #### Deidentifying MRI-data
-There is some debate as to whether or not MRI data can be anonymized. One paper, for example, found that brain morphology, although preprocessed, was personally identifiable [Takao, Hayashi, & Ohtomo, 2015 **INSERT DOI**](). Moreover, it could be argued that, when combining multiple databases, the data may be identifiable in that way as well. De-identifying MRI-data is therefore of high importance to preserve your participants’ privacy.
+There is some debate as to whether or not MRI data can be anonymized. One paper, for example, found that brain morphology, although preprocessed, was personally identifiable [Takao, Hayashi, & Ohtomo, 2015](https://doi.org/10.1016/j.mri.2015.03.010). Moreover, it could be argued that, when combining multiple databases, the data may be identifiable in that way as well. De-identifying MRI-data is therefore of high importance to preserve your participants’ privacy.
+
 -	Anonymize the filenames: replace names with codes
 -	[Remove the header information](https://loni.usc.edu/research/software?name=DiD ) (when using hdr and img files, not for nifti files)
 - Deface the MRI-scans if your software does not do that automatically already
@@ -51,10 +53,10 @@ If you are uncertain whether your data are anonymous, please don't hesitate to c
 ## Where to share data?
 Publishing data can go roughly in the following ways:
 
-##### 1. Supplementary materials to a published paper
+### Supplementary materials to a published paper
 This is an often used method now, but is **not very findable or accessible**, especially if the paper is not published open access. Moreover, the data will not get its own persistent identifier and thus will not be [FAIR](https://www.go-fair.org/fair-principles/). Finally, there is often a limit to the size or number of supplementary files that a journal can host, limiting the possibilities to publish data.
 
-##### 2.	Publishing in data repositories
+###	Publishing in data repositories
 For example:
 -	[DANS DataverseNL](https://dataverse.nl/) (Dutch)
  - For all data and materials accompanying a publication
@@ -66,7 +68,7 @@ For example:
 - [Neurovault](https://neurovault.org/)
  - For group-MRI data (such as t-maps) accompanying a publication
  - Enables meta-analysis of fMRI-studies
- - We aim to **always** upload our contrasts here. Please find instructions on how to do so **here INSERT NEUROVAULT INSTRUCTIONS DOC**
+ - We aim to **always** upload our contrasts here. Please find instructions on how to do so **at the bottom of this page**
 - [Open Science Framework](https://osf.io/)
   - max. 5 GB per file
   - Keep your data close to all other relevant files in your OSF project
@@ -76,62 +78,96 @@ For example:
 In all cases, make your data [FAIR](https://www.go-fair.org/fair-principles/) and make sure the repository that you use has a long-term plan for saving the data.
 See for an overview of data repositories https://www.re3data.org/
 
-#### 3.	Publishing a datapaper
+###	Publishing a datapaper
 You can also publish a dataset in a data journal without the need to add it to a publication. In a datapaper, you describe the data and the methods of collecting them, without the need to analyze them. This way you will get a publication out of your data irrespective of whether or not you publish results, increasing the impact of your research. However, it often requires that you make all described data public, because the aim of such publications is to provide access to high quality datasets and to facilitate reuse. Also, most journals have some policy in which repository you should deposit the data accompanying the datapaper. Note that a datapaper will be peer-reviewed just as well as a regular article.
 
-***Here: include link to the "data-journals.Rmd" file***
-```{r echo=FALSE}
-xfun::embed_file('_bookdown_files/_main_files/data-journals.Rmd')
-xfun::embed_file('data-journals.Rmd')
-````
+![List of data journals]('_bookdownfiles/_main_files/data-journals.Rmd')
 
-#### 4. Sharing case-by-case
+### Sharing case-by-case
 For data that cannot be shared publicly, you can sometimes still share the data case-by-case. This can be the case:
 - For MRI-data for which you have informed consent from the participants to share. You may not want to publish this publicly because of the sensitive nature of the data, but you can still share the data because you have consent. Of course this also goes for other kinds of sensitive data for which you have consent.
 - For data that does not belong to a publication, data that is too large to share in another way or some other reason
 
-###### What you can do
+### What you can do
 - Use a data sharing agreement between you and the user of the data to make sure they will not try to identify your participants or do something else you don't want with the data
 - Send data safely via SURF filetransfer, share it in SURFdrive or use another form of encryption before you send data files
 
-
-
 ### Sharing data under the GDPR
 Anonymous data can be shared without restriction if they are **really** anonymous (if necessary, contact a privacy officer!). You may share non-anonymous data only when:
-- You have attained explicit informed consent from the participant (most used lawful ground). For special personal data, this consent should be *very explicit* ("I agree to share x, y and z"): there cannot be any doubt about this. ***Insert link here to IC template***()
+
+- You have attained explicit informed consent from the participant (most used lawful ground). For special personal data, this consent should be *very explicit* ("I agree to share x, y and z"): there cannot be any doubt about this. See some [example sentences](https://www.uu.nl/en/research/research-data-management/guides/informed-consent-for-data-sharing) and a [template from Leiden University](https://www.medewerkers.universiteitleiden.nl/binaries/content/assets/ul2staff/ict/privacy/consent-form---onderzoek.pdf)
 - You reduce the amount of personal data shared to a minimum (data minimization principle)
 - You take the necessary measures to protect your participants' privacy
 - When sharing data with researchers outside of the EU, Norway, Liechtenstein and Iceland (no GDPR present), make sure that country has an [adequacy decision](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en). If the country does not have one, you need to take extra protection measures, such as standard contractual clauses or agreements.
-- In case your data are not anonymous, but you have attained consent and still want to protect your participants' privacy better, you may always use a **data sharing agreement**. This document contains what users can and cannot do with your data, for how long and if you will get credit if the user publishes about your data. ***A good example is the agreement used by [the Donders repository](LINK). The Open Brain Consent team is also working on a template agreement.***
+- In case your data are not anonymous, but you have attained consent and still want to protect your participants' privacy better, you may always use a **data sharing agreement**. This document contains what users can and cannot do with your data, for how long and if you will get credit if the user publishes about your data. A good example is the agreement used by [the Donders repository](https://data.donders.ru.nl/?2). The Open Brain Consent team is also working on a [template agreement (work in progress!)](https://github.com/CPernet/open-brain-consent/blob/GLiMR-workshop/docs/source/data_user_agreement.rst)
 - Write a Data Management Plan (DMP) and a Data Protection Impact Assessment (DPIA)
   - A DMP contains which data you will collect, where you will save them, whether and with whom you will share them, etc.
   - A DPIA assesses the privacy risks in your project: which sensitive data will you collect and how will you protect them?
 
-### Resources (Leiden University)
+## Resources
+Privacy resources:
+
+- Stephan Heunis's (TU Eindhoven) [summary doc](https://docs.google.com/document/d/1Mfbl4DZAw7MRPjSxIiM5sfYU4gX-pcghgj5M1qb84jg/edit?usp=sharing) about the GDPR and its meaning for research data
 -	Privacy FSW: [Raymond van Erkel](r.van.erkel@fsw.leidenuniv.nl)
 -	Privacy UB: [privacy servicedesk](privacy@bb.leidenuniv.nl), consisting of [Ricardo Catalan](r.m.catalan@bb.leidenuniv.nl) and [Astrid Gravenbeek](a.e.e.gravenbeek@bb.leidenuniv.nl)
 -	Privacy ISSC: [Floran Pikaar](f.g.pikaar@issc.leidenuniv.nl)
 - Course about [privacy in research](https://maken.wikiwijs.nl/125518/Privacy_in__Researc)
-- [Data management and sharing tools](https://digitalscholarship.nl/rds/faculty/faculty-of-social-and-behavioural-sciences/) (list compiled by the Leiden University Library)
-
-
-## Resources
-- [The Turing Way - open data](https://the-turing-way.netlify.com/open_research/01/opendata.html)
-- [The Donders repository]()
 - [Privacy dos and donts](https://www.edugroepen.nl/sites/RDM_platform/RDM_Blog/SiteAssets/Presentatie%20Jacques_Flores_UU.pdf)
 - [Guide for sensitive data](https://www.openaire.eu/sensitive-data-guide)
-- [Legal instruments protecting data (agreements)](https://www.uu.nl/en/research/research-data-management/guides/legal-instruments-and-agreements)
 - [GDPR info](https://www.uu.nl/en/research/research-data-management/guides/handling-personal-data)
 - Info about Informed consents](https://www.uu.nl/en/research/research-data-management/guides/informed-consent-for-data-sharing)
+- [Legal instruments protecting data (agreements)](https://www.uu.nl/en/research/research-data-management/guides/legal-instruments-and-agreements)
+- [OpenBrainConsent](https://open-brain-consent.readthedocs.io/en/stable/), a bottom-up initiative to make sense of the GDPR in sharing MRI data
 
+Data sharing:
 
-## **IN PROGRESS. STILL TO DO**
-- ADD LINK TO STEPHAN"S GDPR DOC
-- LINK TO DONDERS REPO
-- LINK TO OpenBrainConsent
-- EMBED NEUROVAULT INSTRUCTIONS
-- COPYRIGHT INTRO
-- ADD DOI: Takao, H., Hayashi, N., & Ohtomo, K. (2015). Brain morphology is individual-specific information. Magnetic resonance imaging, 33(6), 816-821.
-- ADD MORE HELPFUL LINKS
-- WAY TO MAKE THE CHAPTER MORE READABLE (TABS/ACCORDION/COLORS, ETC.)**
+- [Data management and sharing tools](https://digitalscholarship.nl/rds/faculty/faculty-of-social-and-behavioural-sciences/) (list compiled by the Leiden University Library)
+- [The Turing Way - open data](https://the-turing-way.netlify.com/open_research/01/opendata.html)
+- [The Donders repository](https://data.donders.ru.nl/?1)
 
+## Instructions for uploading data into Neurovault
+[See this file for the instructions]('_bookdown_files/_main_files/20191210_Instructions_Neurovault.docx')
+'_bookdown_files/_main_files/20191210_Instructions_Neurovault.docx'
+
+### Why Neurovault?
+- Sharing data without sending files around
+- Visualizes your MRI contrasts and gives the dataset a persistent identifier
+- Makes meta-analyses a lot easier (a good [open] science practice!)
+- Helps you provide transparency to reviewers asking about your data
+- Allows referring to the original paper
+
+Tips:
+
+- Before uploading: Keep a good documentation of your contrasts during your data analysis so that it is easier to look up which contrast is which (since SPM is not good at file naming)
+-	Upload the images before you send in the first version of your paper. This way you can show the reviewers the data from the start (with the neurovault link)
+-	You can upload both t-maps and ROIs from many different modalities (see below)
+-	Include all analyses published in the paper and the main effects even if they are not included in the publication. This makes your analysis more transparent to the reviewers
+
+### Which data can be uploaded into neurovault?
+- Map types: t, z, F, chi-squared, p (given null hypothesis), 1-p ("inverted" probability), univariate beta map, multivariable beta map, ROI/mask, parcellation, anatomical, variance 
+- Modalities: fMRI BOLD, fMRI-CBF, fMRI-CBV, diffusion MRI, structural MRI, PET FDP, PET [15O]-water, PET other, MEG, EEG, Other
+
+Example datasets: [Renske van der Cruijsen](https://identifiers.org/neurovault.collection:4774), [Michelle Achterberg](https://identifiers.org/neurovault.collection:6070)
+
+### Instructions
+1. Log in at https://neurovault.org/. If you have never used Neurovault before, create an account (or use your Google account).
+2. Create a dataset, click “Get started and upload an image!” or “Add new collection” under the “Collections” tab.
+3. Fill in the following information (metadata): **Essentials**
+ - Name of the collection: title of your article
+ - DOI of your article (if already present: always!!)
+ - Developmental neuroscience community
+ - Full dataset URL: for example a link to an OSF project, dataverseNL publication package, or Openneuro dataset, if applicable
+ - Contributors: add the last author of your paper. In case you lose access to your account, the contributor can still make adaptations
+ - Accessibility: public, unless you are still in the reviewing process and only want the reviewers to see the data (with a view-only link)
+ - Subjects: Mean, min and max age of the sample (for easier meta-analysis)
+ - Design: type of design
+ - Acquisition, registration, preprocessing, first level and second level:  these details should be included in your paper. You can include them here as well but not necessarily.
+4. Click “Add image”
+ - Name: short & as clear as possible which map / contrast you are referring to (otherwise add a description)
+ - Map type (often t-map), modality (often fMRI BOLD) and template image (often MNI)
+ - Cognitive Atlas Paradigm: choose the task that resembles yours the best. This may not always be possible, however this field is mandatory
+ - You can upload .nii, .nii.gz and .hdr/.img files. Make sure to select the correct contrast (i.e., have good data documentation)!
+ - Cognitive paradigm description: if you have a task that is not well-known or widely used, e.g., the SNAT, you can refer to a document about the task in this field.
+ - Analysis level: often group (if single-subject, upload each contrast for each subject)
+ - No. of subjects
+ - Corresponding figure: not necessary but very insightful for reviewers
