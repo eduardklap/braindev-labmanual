@@ -4,9 +4,9 @@
 In general, data management consists of:
 
 - A good structure of your data
+- Providing sufficient metadata so that a later you and others can understand the data
 - Making your data FAIR: Findable, Accessible, Interoperable and Reusable
 - Using version control for different versions of your files
-- Providing sufficient metadata so that a later you and others can understand the data
 - Securing your data for loss, corruption and leaking
 - A good plan encompassing all these aspects and all phases of the [research life cycle](https://www.ukdataservice.ac.uk/manage-data/lifecycle.aspx)
 
@@ -15,7 +15,7 @@ All these aspects will be discussed in more detail below.
 ## Structure of your data
 In the Brain and Development Research Center, we aim to use a **standard folder structure** for all of our projects. This folder structure currently looks like this:
 
-* insert image?/text? * 
+* insert image/text? * 
 
 
 
@@ -25,7 +25,18 @@ To be discussed:
 - Standard, such as BIDS
 - Tutorial(s) BIDS
 
-## FAIR data: not necessarily open
+## Metadata
+In order for a later you ánd others to understand what your data are about, you have to provide **metadata**. Metadata is a fancy word for information *about* your data that increase the understanding of the dataset. This kind of information may be:
+- who created and analyzed the data (contact info)
+- what was collected (which tasks, for example)
+- where was it collected
+- how was it created
+- why was it created (see instructions publication packages)
+- who was excluded and why, which files were corrupted, other exceptions to the standard pipeline
+
+It is easiest to provide **readme.txt** files with additional information about the data or project, analysis logs, data dictionaries, overviews (e.g., which data were collected when), etc. These files are *human-readable*, allowing others to quickly understand what is going on. One step further is to create *machine-readable* metadata. In the BIDS-format, these are the .json files that provide background information on the files in question. For machine-readable metadata, there are multiple standards, such as the Dublin Core (used by the 4TU.centre, see [this link](http://www.dcc.ac.uk/resources/subject-areas/social-science-humanities) for more standards.
+
+## FAIR data
 Making your data Findable, Accessible, Interoperable and Reusable (FAIR) facilitates knowledge discovery by assisting humans and machines in their discovery of and access to the data. The aim of the university is to make all data produced by scientific research FAIR, aiding the reproducibility of scientific findings, contributing to the open science movement. See also [this video](https://vimeo.com/162062013)
 
 #### Findable by both humans and machines
@@ -88,12 +99,19 @@ To do:
 
 
 ## Version control
-Git(hub)
-Dos and don'ts
+Version control is something that is not often used yet, but extremely important when managing a lot of data. Keeping track of the different versions of your files allows you to see:
 
-## Metadata
-Human-readable
-Machine-readable
+- Which version is the most recent
+- Which version is the untouched, "raw" version (very important for raw data)
+- What happened between the raw and final versions
+
+### How can you use version control effectively?
+- Use git (e.g., via [github](https://github.com/), [gitlab](https://gitlab.com/gitlab-org), or [bitbucket](https://bitbucket.org/)), this is an excellent version control system for small files, originally meant for collaboratively writing code and originally commandline-based. However, git can also be used without having to code at all, e.g., in [GitKraken](https://www.gitkraken.com/) or [Rstudio](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN). This bookdown is also created using git! See [this document](https://docs.google.com/document/d/1FZUNvDnc4Kl1IizuASLMNocahSvwZQ14Tlu3rlMaRb4/edit?usp=sharing) for one of the many existing tutorials on how to use git in GitKraken. 
+- Use version control in your **file names**. For example:
+  - Start each document with the date of creation, e.g., "20200218_ExampleDoc.docx". Extra advantage: your file manager will automatically sort the files in order of date
+  - Note the version number in the file name. Use the decimal to indicate small changes (e.g., sentences added, typos fixed) and the integer for large changes (e.g., added an entire section, changed the structure of the document). **However**, pay attention NOT to include words like "final", "finished", etc. From experience, the final version is never really the final version! E.g., "ExampleDoc_v1.0.docx", "ExampleDoc_v2.3.docx"
+- Use version control in your **files** themselves. On the first page of the file, include a list of changes done to the document, similar to commit messages in Git
+- Include metadata with information about each version (e.g., which version is the final version/used version for a publication, etc.)
 
 ## Data security
 As a researcher, you collect a **lot** of data. These can be highly sensitive, i.e., the risk of identification is high (privacy breach). Also,  you probably do not want people who are not involved in your project to have access to your data when we you are not yet finished with them. In order to deal with the sensitivity of the data and prevent them from being stolen, it is imperative that we ensure the highest possible data security. Below are some tips to maximize data security.
@@ -221,7 +239,7 @@ Never save documents online, just open them. You never know who will get their h
  - Sharepoint teamsite: enables sharing of documents, keeping records, placing statements and using discussion forums. It is only accessible outside the university with a ULCN-account. Request a Sharepoint teamsite via the [ISSC helpdesk](https://helpdesk.universiteitleiden.nl/tas/public/login/saml).
  - Edugroups is suitable when collaborating with other universities: it is comparable to a sharepoint teamsite, but does not require a ULCN-account. You can make an Edugroups teamsite yourself at www.edugroepen.nl. N.B. you cannot share large amounts of data here (max. 250 MB per user).
  - Virtual research environments (VRE): enables making documents and data accessible to other universities, editing documents, using wikis, blogs and shared calendars. Read more about VREs and how to get one [here](https://www.library.universiteitleiden.nl/research-and-publishing/collaboration-tools).
-
+- For sharing in the future, prevent bitrot and use [sustainable and ideally open data formats](https://dans.knaw.nl/en/about/services/easy/information-about-depositing-data/before-depositing/file-formats)
 
 #### Do not talk about or analyze individual data in public spaces
 For example in the elevator, a common room, public transport, social media, emails, etc.
@@ -230,22 +248,12 @@ For example in the elevator, a common room, public transport, social media, emai
 -	Coding audio in a public space is only allowed when others cannot hear the audio, e.g., because you are wearing headphones
 -	Transcribe audio and video using safe websites such as uitgetypt.nl 
 
-
 #### Contacting participants outside the university
 -	When contacting participants outside the university, e.g., via your own mobile phone, make sure not to send any identifiable information via your phone (incl. sms or whatsapp)
 -	Avoid coupling participant numbers with phone numbers and/or names in emails or whatsapp messages
 
 
-
-
-Some text
-
-- Back-ups
-- Sending data to others
-- Privacy: DPIA
-- File formats (bit rot)
-
-### The data Protection Impact Assessment
+## The Data Protection Impact Assessment (DPIA)
 Whenever you process sensitive data (or something changes regarding this), such as MRI data, names, addresses, daily diaries, etc., you are required to fill in a Data Protection Impact Assessment (DPIA) that has to be approved before starting your study by a [privacy officer](privacy@fsw.leidenuniv.nl). This is a document in which you identify privacy risks and formulate measures to prevent breaches. You register which data you collect and who is responsible. A DPIA touches upon:
 
 - Collaborations in your project:
@@ -258,10 +266,67 @@ Whenever you process sensitive data (or something changes regarding this), such 
   - Own creation, e.g., interviews, pictures
   - Re-used, e.g., multiple datasets combined (pay attention for identifiability)
 
-## Data management plan (DMP)
-Prior to your research, you need to draft a Data Management Plan (DMP). In this document, you register which data you will collect and what you will do with it: where to store it during and after the research, how will you process it, where, how and with whom to share it, etc.
-- The University Library has a special team to help you write this and also gives trainings. There is also a template that you could use
-- If your research is funded by the NWO, you have to use one of their approved templates and get feedback from an expert (e.g., the CDS at Leiden University).
+## The Data Management Plan (DMP)
+Since 2016, all research projects must have a **data management plan (DMP)** before starting a project. The DMP stimulates you to think about how you will manage your data both during and after your project. This is also important when you are considering open data. The university has a [DMP template](https://www.library.universiteitleiden.nl/binaries/content/assets/ul2ub/research--publish/cds/rdm-reference-materials/template-datamanagementplan_leiden_v3.2.docx), but your funder may also require you to use one of theirs, or use an [online tool](https://dmponline.dcc.ac.uk/). If your research is funded by the NWO, you have to use one of their approved templates and get feedback from an expert (e.g., the CDS at Leiden University). The University Library has a special team to help you write this and also gives trainings
+
+**Why DMP?**
+
+-	Plan the way you will create, organize, store, preserve and share your data
+-	Demonstrate funder/employer that you know how to handle your data
+-	Record how your data was managed during your research
+-	Written using a template from Leiden University or your funder
+
+![The Research Data lifecycle (source: UK data archive]('figures/Research_Data_Lifecycle_.png')
+
+### Components of a DMP
+- Cover information
+- Data collection and creation
+  - Will you use your own data or someone else’s? How will you create your data?
+  - How will you access the data in the future? How do you know you can trust the data (provenance)?
+  - What license will you use?
+  - What kind of data will it be? How many files? What type of files? How large? (See this list of [preferred file formats](https://dans.knaw.nl/en/about/services/easy/information-about-depositing-data/before-depositing/file-formats))
+  - Estimation of file size, data quality (resolution, quality), file formats (open, compression), usefulness (versions/processed or unprocessed). Search for “file size calculator”
+- Data storage and security
+  - Where will you store your data?
+  - Where and how often will you make back-ups (1 copy offsite, 3 copies, 2 different media?)
+  - What do you do to make sure that the right people can access your data?
+    - Passwords, encryption, firewalls
+    - Reduce sensitivity – anoymise, aggregate
+    - Secure transport and deletion
+- Documentation and metadata
+  - Give meaningful names and structure to your files (e.g.: date, project leader, project number, performer, condition participant, participant number)
+  - Create a readme file with the meaning of the file name
+  - Use version control
+  - Provide information about the data (time, place, people involved): metadata
+- Data access, sharing and reuse: also with colleagues
+  - Any restrictions regarding personal data (AVG)?
+  - With whom do you want to share your data? How?
+  - Has ownership been agreed?
+  - Who might find your data useful later?
+  - reasons to opt out: 
+    - privacy
+    - intellectual property rights
+    - might jeopardize the project’s main objective
+    - commercial (working for companies)
+    - security-related
+  - Think about linking your data to your publication AND vice versa! Also think about linking your publications to you through an [ORCID-ID](https://www.library.universiteitleiden.nl/research-and-publishing/scholarly-publishing/manage-your-name-with-identifiers)
+- Data preservation and archiving: maximize the funder’s investment!
+  - Which data do you want to keep for future use? Which data will you discard?
+  - Which data should you pass on to somebody else? 
+  - Where are you going to archive these data? 
+  - How to organize the data so that they can still be understood in the future?
+  - Who is responsible for your data after you leave? 
+  - Do you have a specific data archive in mind?
+  - ! Not all data need to be preserved: costs of storing vs. benefit of access
+
+### Some tips for your DMP
+-	Plan for at least 10 years storage
+-	Check what file formats are most suitable for long-term archiving
+-	Check whether there is likely to be a cost for your volume of data
+-	Ask what repository/storage system others with similar data are using
+-	Think about how you will grant access: will people always have to ask permission or can the data be open?
+-	Ensure the data is documented so that others can understand it later
+
 
 ## Resources
 - [The Turing Way - data management](https://the-turing-way.netlify.com/rdm/rdm.html)
