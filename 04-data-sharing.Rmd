@@ -130,25 +130,8 @@ Anonymous data can be shared without restriction if they are **really** anonymou
 - LINK TO DONDERS REPO
 - LINK TO OpenBrainConsent
 - EMBED NEUROVAULT INSTRUCTIONS
-- COPYRIGHT INTO
+- COPYRIGHT INTRO
 - ADD DOI: Takao, H., Hayashi, N., & Ohtomo, K. (2015). Brain morphology is individual-specific information. Magnetic resonance imaging, 33(6), 816-821.
 - ADD MORE HELPFUL LINKS
 - WAY TO MAKE THE CHAPTER MORE READABLE (TABS/ACCORDION/COLORS, ETC.)**
 
-**IN DATA MANAGEMENT CHAPTER**
-### DMP
-Prior to your research, you need to draft a Data Management Plan (DMP). In this document, you register which data you will collect and what you will do with it: where to store it during and after the research, how will you process it, where, how and with whom to share it, etc.
-- The University Library has a special team to help you write this and also gives trainings. There is also a template that you could use
-- If your research is funded by the NWO, you have to use one of their approved templates and get feedback from an expert (e.g., the CDS at Leiden University).
-
-### Data protection impact assessment (DPIA)
-Whenever you process sensitive data (or something changes regarding this), such as MRI data, names, addresses, daily diaries, etc., you are required to fill in a Data Protection Impact Assessment (DPIA) that has to be approved before starting your study by a [privacy officer](privacy@fsw.leidenuniv.nl). This is a document in which you identify privacy risks and formulate measures to prevent breaches. You register which data you collect and who is responsible. A DPIA touches upon:
-- Collaborations in your project:
-  - Within your institute
-  - Between institutes: agree upon who has access to the data and which technologies are used (e.g., for saving and analyzing the data)
-  - Public-private collaborations: make contractual agreements about how to handle data
-- Geography: outside of the EU, you need to make contractual agreemenents about how to handle data
-- Types of data collected:
-  - Automatically generated (e.g., fitness watches)
-  - Own creation, e.g., interviews, pictures
-  - Re-used, e.g., multiple datasets combined (pay attention for identifiability)
