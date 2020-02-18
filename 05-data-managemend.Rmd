@@ -1,0 +1,268 @@
+# Data management
+## General
+**Data management** consists of everything that has to do with managing your data: where and how is it stored, described and reused? 
+In general, data management consists of:
+
+- A good structure of your data
+- Making your data FAIR: Findable, Accessible, Interoperable and Reusable
+- Using version control for different versions of your files
+- Providing sufficient metadata so that a later you and others can understand the data
+- Securing your data for loss, corruption and leaking
+- A good plan encompassing all these aspects and all phases of the [research life cycle](https://www.ukdataservice.ac.uk/manage-data/lifecycle.aspx)
+
+All these aspects will be discussed in more detail below.
+
+## Structure of your data
+In the Brain and Development Research Center, we aim to use a **standard folder structure** for all of our projects. This folder structure currently looks like this:
+
+* insert image?/text? * 
+
+
+
+To be discussed:
+
+- Folder structure and example(s)
+- Standard, such as BIDS
+- Tutorial(s) BIDS
+
+## FAIR data: not necessarily open
+Making your data Findable, Accessible, Interoperable and Reusable (FAIR) facilitates knowledge discovery by assisting humans and machines in their discovery of and access to the data. The aim of the university is to make all data produced by scientific research FAIR, aiding the reproducibility of scientific findings, contributing to the open science movement. See also [this video](https://vimeo.com/162062013)
+
+#### Findable by both humans and machines
+The dataset should be findable with a google datasets search: 
+
+1. (Meta)data are assigned globally unique and **persistent identifiers**. Most repositories do this automatically through a handle or DOI.
+2. Data are described with **rich metadata**, including descriptive information about the context, quality and condition, or characteristics of the data
+3. Metadata specify the data identifier: metadata and dataset should **link** to each other
+4. (Meta)data are registered or indexed in a **searchable resource** (e.g., a repository)
+
+To do:
+
+- select a data repository early on and check its data format and metadata requirements
+- make sure the data get a persistent identifier so that they can be cited
+- maybe select a catalogue to make your data more findable, especially if the repository is more generic in nature
+
+#### Accessible: stored for the long term with well-defined legal access conditions
+Think about the security, legal conditions, sustainability and access conditions of the data.
+
+1. (Meta)data are **retrievable by their identifier** using a standardized communication procotol, e.g., http or ftp, without specialised tools or communication methods. So, clearly define who can access the actual data, and specify how
+2. The protocol is open, free, and universally implementable to facilitate data retrieval. Anyone with a computer and an internet connection can access **at least the metadata**. 
+3. The protocol allows for an authentication and authorization where necessary: specify the conditions under which the data are accessible
+4. Metadata should be accessible even when the data are no longer available
+
+To do:
+
+- guarantee longevity of the data, e.g., by submitting them to a repository that has a certification (e.g., Data Seal of Approval, ISO certification)
+- check and describe the legal conditions under which the data can be made available
+- establish an embargo period if necessary
+- make sure your ICT infrastructure will keep the data available even in case of equipment failure or human error
+
+#### Interoperable: ready to be combined with other datasets
+Think about the software, documentation standards (e.g., the same labels for the same variables) and formats. This differs for different disciplines.
+
+1. (Meta)data use a formal, accessible, shared and broadly applicable language for knowledge representation:  the metadata should be readable for machines without the need for specialized or ad hoc algorithms, translators, or mappings
+2. (Meta)data use vocabularies that follow the FAIR principles
+3. (Meta)data include qualified references to other (meta)data: meaningful links between (meta)data, e.g. X regulates Y instead of X associated with Y
+
+To do:
+
+- select commonly used data formats
+- select commonly used vocabularies for data items
+
+A good example of a structure that improves interoperability is the BIDS format for neuroimaging data.
+
+#### Reusable: ready to be used for future research
+Think about the licensing and provenance (can you trust this data?) of the data
+
+1. (Meta)data are **richly described** with a plurality of accurate and relevant attributes, i.e., the context under which the data was generated, e.g.,: scope/purpose of the data, particularities/limitations, date of generation/collection, lab conditions, who prepared the data, parameter settings, name and version of the software used, raw or processed data, explain non-self-explanatory variable names, version
+2. (Meta)data are released with a clear and accessible data usage **license**
+3. (Meta)data are associated with **detailed provenance**: where did it come from? Who generated or collected it? How has it been processed? Has it been published before? Does it contain data from someone else that you may have transformed or completed?
+4. (Meta)data meet domain-relevant **community standards**: use a common template and common vocabulary. 
+
+To do:
+
+- make sure you keep proper provenance information: details about how and where the data was generated, including machine settings, and details about all processing steps, such as the software tools with their versions and parameters
+- select the right minimal metadata standard and collect the necessary metadata, see [Fair Sharing](https://fairsharing.org/)
+- select a license for the data (preferably an open license) and the associated software tools
+- make sure the important conclusions of your study will not only be available in a paper in narrated form, but also in a digital file (e.g., a nanopublication)
+
+
+## Version control
+Git(hub)
+Dos and don'ts
+
+## Metadata
+Human-readable
+Machine-readable
+
+## Data security
+As a researcher, you collect a **lot** of data. These can be highly sensitive, i.e., the risk of identification is high (privacy breach). Also,  you probably do not want people who are not involved in your project to have access to your data when we you are not yet finished with them. In order to deal with the sensitivity of the data and prevent them from being stolen, it is imperative that we ensure the highest possible data security. Below are some tips to maximize data security.
+
+### Loss of data or any other problems?
+If you are not certain how to handle data, lose data (e.g., on an external hard drive) or run into any other problems, don’t hesitate to contact:
+
+- [The Leiden FSW privacy office](privacy@fsw.leidenuniv.nl) 
+- [The Leiden ISSC helpdesk](helpdesk@issc.leidenuniv.nl), phone: +31 071 527 8888
+-	Your data manager or team supervisor
+
+Data breaches must be reported **immediately** to the [ISSC Helpdesk](helpdesk@issc.leidenuniv.nl) or via the [Helpdesk portal](https://helpdesk.universiteitleiden.nl/tas/public/ssp/?_ga=2.149202038.118672253.1558949105-1414156734.1555421485).
+
+### General data security principles
+#### Always report a (possible) data leak or breach
+- Every loss of data is a potential data leak, such as:
+ - stolen or lost digital files: USBs, laptops, external hard drives, data that is not backed-up, etc.
+ - stolen or lost printed personal data, e.g, a note containing a password, lists with grades, etc.
+ - viruses on your PC or hacked accounts, including phishing mails
+ - both pseudonymized and anonymized data need to be reported
+- Always report a (possible) data leak to your supervisor first (the data manager if present) and the ISSC Helpdesk second (call 8888 or helpdesk@issc.leidenuniv.nl).
+- Report the (possible) leak as soon as possible, so that we can adequately respond and limit the amount of damage for participants as much as possible. Keep in mind that measures taken are meant to secure the data, not to punish those involved!
+- Also report phishing mails or other forms of cyber crime to the ISSC helpdesk (see [more info](https://www.staff.universiteitleiden.nl/ict/privacy-and-data-protection/working-securely-online/cybercrime/social-and-behavioural-sciences/psychology?cf=social-and-behavioural-sciences&cd=psychology)).
+
+#### Anonymize your data
+- The best way to guard the privacy of your participants is to anonymize your data, such that the data cannot be traced back to participants (not even with a key containing the name-number links). 
+- For longitudinal data, this can get complicated, since you want to be able to link the data of the same subject and may also need the participants’ contact info for next waves. 
+- Besides anonymization, there are other ways to ensure that the data (including emails, contact information and raw research data) won’t fall into the wrong hands.
+
+#### Choose safe passwords for your devices
+This concerns your LU account, your laptop, your phone (if it has email on it), and all other devices that contain data.
+
+- Use a sentence instead of a word: sentences are a lot harder to crack and easier to remember, especially long sentences containing a combination of letters, numbers and signs are safe.
+- Use a password manager to keep all your passwords safe, such as [Keepass](https://keepass.info/) or [Lastpass](https://www.lastpass.com/nl) (both free). A password manager remembers all your passwords which you can access with 1 master password. This way you can choose safe passwords that you do not have to remember yourself. 
+- If possible, change your passwords or codes (e.g., to lockers) regularly
+- Share passwords only with the people who really need it
+- Protect mobile devices:
+ - Use a safe internet network (preferably Eduroam): never use an open network. Preferably use [EduVPN](https://www.surf.nl/eduvpn-maak-onveilige-verbindingen-veilig), which is free for university employees and makes sure that the connection is safe.
+ - Make sure you can wipe the device and change the password(s) from a distance in case of theft or loss
+ -	Make sure to have a copy of the information on the university system
+ -	Always install all security updates and, if possible, antivirus and anti-malware software
+ -	Do not install jailbreak/root (gaining privileged access to the operating system)
+ -	Do not save confidential information, unless it is well-protected
+
+#### Protect files with passwords too
+If a file contains personal data, such as contact information, the link to a participant number or data on the MRI checklist, protect it with a password:
+
+-	In Word: File > Info > Protect document > Encrypt with password
+ -	You can also restrict editing a document via Protect document (also uses a password that you need to Stop the protection)
+- In Excel: File > Info > Protect Workbook structure > Encrypt with password
+ -	Here you can also restrict editing the workbook (current sheet or all sheets), which also requires a password to Unprotect the sheet or workbook (under Review)
+-	Save the password somewhere safe so that you can always access the document: **if you lose the password, you cannot access the document anymore**
+-	Only give the password to those who really need it. Try to restrict the amount of people that have access to the document.
+
+#### Keep paper data (logs, questionnaires, MRI checklists) locked up
+These data may also be sensitive, especially when there are remarks on them that are very specific to a participant. 
+
+- Do not leave data behind in labs after testing: take them with you! When testing multiple participants in one day, do not leave data from a previous participant laying around
+-	Keep papers in a locked closet or a locker and only give access to people that need it
+-	If necessary, keep a record of who has access
+-	Do not take papers with such data home or outside, unless strictly necessary
+
+#### Keep a clear-desk policy
+Do not leave any data unattended if you leave your desk for a longer period of time. 
+
+-	This includes both digital data (on your PC) and data on paper
+ -	For digital data: lock your screen (Cntrl+Alt+Delete > Enter or: Windows+L)
+ -	For paper data: put them in a closed closet or locker or lock your room if no one else is present
+ -	When testing participants, do not leave data from a previous participant laying around and take them with you when you leave
+-	This includes all desks: your own workspace, the secretariat, computer room, the lab, etc.
+
+#### Email safely
+-	When emailing large amounts of people (e.g., all your participants for a project newsletter), put the email addresses in the BCC (blind carbon copy) field, so that the receivers cannot see who else got the email. Put your own email address in the “To” field.
+-	Where possible, use your university email, which has a safe connection with the university servers. Avoid using Hotmail, Gmail or Yahoo.
+
+#### Print safely
+Use Secure printing to print confidential information via a password: The printer will only start printing when you have filled in a personal pin code. Securely printed documents will be erased  from the university servers immediately after printing. The settings of the print job cannot be adjusted at the printer
+
+-	Print > Properties > Output method: Secure print > Ok to confirm
+-	Fill in the pin code that you need to enter at the printer > Ok to confirm pin
+-	At the printer: 
+ - Select “Secure print” in the main menu and select your print job. 
+ - Confirm with Secure print
+ - Enter your pin code > Ok
+-	When throwing away confidential information on paper, use a container that can be locked (especially made for confidential paper). 
+
+### Storing your data
+#### Aim not to store data on local drives only
+Instead, use the J-drive, which is automatically backed-up and secured through the university. Also, the J-drive is shared, so if you suddenly leave the university for some reason, you will not have any data left in an account that cannot be accessed. 
+
+- Use [Workgroups](J:\Workgroups\) for collaborations with other departments
+- For students, use [Students/FSW](J:\Students\FSW\)
+- Use [ResearchData](J:\ResearchData\FSW\) for all your research data, both raw and processed files
+- If you are processing data on your local Data drive, be sure to back it up at the J-drive
+- Don’t use your P: drive to store data long-term: if you leave the university suddenly, your data will not be accessible for others!
+
+
+#### Do not store identifiable information on personal devices
+- It is only permitted to work with un-pseudonymized data when this is necessary for data collection, processing or planning and, officially, only when participants have given their permission
+- If you are working with un-pseudonymized data on a personal computer (e.g., laptop), then you have to remove the data after the analyses
+
+#### Do not store non-anonymized data in the cloud
+Never save documents online, just open them. You never know who will get their hands on your data when you store it in the cloud. If you want to work at home, use:
+
+- [Remote workspace](https://remote.campus.leidenuniv.nl/): gives access to your university workspace using Citrix Receiver (which you need to download), see [this link](https://www.medewerkers.universiteitleiden.nl/binaries/content/assets/ul2staff/ict/handleidingen/handleiding-remote-werkplek-windows-2016-ned.pdf) for a manual.
+- [Gateway](https://gateway.campus.leidenuniv.nl/): when using the Citrix option, you are basically using the Remote workspace, but this website also gives the option “light version”, which pastes your programs in html.
+- Remote desktop: gives access to your university desktop, including your workspace. You need authorization in order to use this feature, which you can request [here](https://helpdesk.universiteitleiden.nl/tas/public/ssp/content/serviceflow?unid=8a95c4f0db2b4e67a2425221b7340867&openedFromService=true). You can find a manual how to set up your remote desktop in the [ISSC helpdesk](https://helpdesk.universiteitleiden.nl/tas/public/ssp/content/detail/service?unid=f75670170196496b85be25bbfcbdf514&from=dbf9337d-0bf1-45df-a7cb-3ced675020a9).
+- [SURFdrive](https://engine.surfconext.nl/authentication/idp/single-sign-on/key:20181213?SAMLRequest=fZLNbsIwEIRfJfI9OAlCgEWQKByKRFsEtIdeKsdZwKpZp16HwtvXIa1KD%2BXmn9lvdscekTyYSkxqv8cVfNRAPjodDJK4XOSsdiisJE0C5QFIeCXWk4eFyDqJqJz1VlnDogkROK8tTi1SfQC3BnfUCp5Xi5ztva9IcE6125), a safe alternative to Google Drive/Dropbox/WeTransfer/OneDrive that everyone with a (Dutch) university account has access to. 
+ - N.B. You can request SURFdrive also for students or give students the link
+
+#### If using a local drive, laptop, USB, external hard drive, or video camera, the following rules apply:
+- If you are processing data on your local drive, be sure to always back it up on the J-drive
+- If possible, protect the device, hard drive or drive with a password
+- Do not put the passwords to laptops on the laptop itself
+- When the data have been saved at the right location, delete the data from the device (shift + delete or empty the recycling bin)
+- If you have to take devices onto the street, bring them to a (safe and appointed) university location as quickly as possible. Do not bring them home unless absolutely necessary.
+- If you have to take data home, do let leave them unattended in a (semi)public place (such as a car or library). If possible, leave it in a locked room.
+
+### Communication and sharing
+#### Do not share data via email attachments, Google Drive, etc.
+- Instead of email attachments, use [SURF filesender](https://filesender.surf.nl) (incl. SPSS datasets). Email attachments are saved on mail servers and on your PC, whereas this is not the case with filesender. 
+- If you are sending an internal email, use a hyperlink or the path to the relevant folder where possible: select a word > right mouse click > Hyperlink > paste path to the document > Ok
+-	If you want others to be able to edit the documents you share, use [SURFdrive](https://engine.surfconext.nl/authentication/idp/single-sign-on/key:20181213?SAMLRequest=fZLNbsIwEIRfJfI9OAlCgEWQKByKRFsEtIdeKsdZwKpZp16HwtvXIa1KD%2BXmn9lvdscekTyYSkxqv8cVfNRAPjodDJK4XOSsdiisJE0C5QFIeCXWk4eFyDqJqJz1VlnDogkROK8tTi1SfQC3BnfUCp5Xi5ztva9IcE6125), a safe alternative to Google Drive/Dropbox/WeTransfer/OneDrive that everyone with a (Dutch) university account has access to
+- For collaborations, other options as well, such as:
+ - Sharepoint teamsite: enables sharing of documents, keeping records, placing statements and using discussion forums. It is only accessible outside the university with a ULCN-account. Request a Sharepoint teamsite via the [ISSC helpdesk](https://helpdesk.universiteitleiden.nl/tas/public/login/saml).
+ - Edugroups is suitable when collaborating with other universities: it is comparable to a sharepoint teamsite, but does not require a ULCN-account. You can make an Edugroups teamsite yourself at www.edugroepen.nl. N.B. you cannot share large amounts of data here (max. 250 MB per user).
+ - Virtual research environments (VRE): enables making documents and data accessible to other universities, editing documents, using wikis, blogs and shared calendars. Read more about VREs and how to get one [here](https://www.library.universiteitleiden.nl/research-and-publishing/collaboration-tools).
+
+
+#### Do not talk about or analyze individual data in public spaces
+For example in the elevator, a common room, public transport, social media, emails, etc.
+
+-	Coding videos and audio is only allowed where other researchers from the same project work or in special coding rooms
+-	Coding audio in a public space is only allowed when others cannot hear the audio, e.g., because you are wearing headphones
+-	Transcribe audio and video using safe websites such as uitgetypt.nl 
+
+
+#### Contacting participants outside the university
+-	When contacting participants outside the university, e.g., via your own mobile phone, make sure not to send any identifiable information via your phone (incl. sms or whatsapp)
+-	Avoid coupling participant numbers with phone numbers and/or names in emails or whatsapp messages
+
+
+
+
+Some text
+
+- Back-ups
+- Sending data to others
+- Privacy: DPIA
+- File formats (bit rot)
+
+### The data Protection Impact Assessment
+Whenever you process sensitive data (or something changes regarding this), such as MRI data, names, addresses, daily diaries, etc., you are required to fill in a Data Protection Impact Assessment (DPIA) that has to be approved before starting your study by a [privacy officer](privacy@fsw.leidenuniv.nl). This is a document in which you identify privacy risks and formulate measures to prevent breaches. You register which data you collect and who is responsible. A DPIA touches upon:
+
+- Collaborations in your project:
+  - Within your institute
+  - Between institutes: agree upon who has access to the data and which technologies are used (e.g., for saving and analyzing the data)
+  - Public-private collaborations: make contractual agreements about how to handle data
+- Geography: outside of the EU, you need to make contractual agreemenents about how to handle data
+- Types of data collected:
+  - Automatically generated (e.g., fitness watches)
+  - Own creation, e.g., interviews, pictures
+  - Re-used, e.g., multiple datasets combined (pay attention for identifiability)
+
+## Data management plan (DMP)
+Prior to your research, you need to draft a Data Management Plan (DMP). In this document, you register which data you will collect and what you will do with it: where to store it during and after the research, how will you process it, where, how and with whom to share it, etc.
+- The University Library has a special team to help you write this and also gives trainings. There is also a template that you could use
+- If your research is funded by the NWO, you have to use one of their approved templates and get feedback from an expert (e.g., the CDS at Leiden University).
+
+## Resources
+- [The Turing Way - data management](https://the-turing-way.netlify.com/rdm/rdm.html)
+- [Data security tips by Leiden University](https://www.medewerkers.universiteitleiden.nl/ict/privacy-en-gegevensbescherming/veilig-digitaal-werken/informatiebeveiliging/sociale-wetenschappen/psychologie?cf=sociale-wetenschappen&cd=psychologie)
