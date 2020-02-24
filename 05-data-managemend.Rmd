@@ -18,6 +18,19 @@ In the Brain and Development Research Center, we aim to use a **standard folder 
 * insert image/text? * 
 
 
+Not only the structure of your folders is important to keep organized, but also the data itself. Especially when you are using spreadsheets, it is very important to keep the raw data apart from any processed data and document which processing steps have been taken. Using version control can help a lot in preventing confusion about the most recent files and what has been done to them. Some more general tips for spreadsheet data: 
+- Write dates as YYYY-MM-DD
+- Don’t leave any cells empty
+- Put just one thing in a cell
+- Organize the data as a single rectangle
+- Create a data dictionary
+- Don’t include calculations in the raw data files
+- Don’t use font color or highlighting as data
+- Choose good names for things
+- Make backups
+- Use data validation to avoid data entry mistakes
+- Save the data in plain text files
+
 
 To be discussed:
 
@@ -37,7 +50,7 @@ In order for a later you ánd others to understand what your data are about, you
 It is easiest to provide **readme.txt** files with additional information about the data or project, analysis logs, data dictionaries, overviews (e.g., which data were collected when), etc. These files are *human-readable*, allowing others to quickly understand what is going on. One step further is to create *machine-readable* metadata. In the BIDS-format, these are the .json files that provide background information on the files in question. For machine-readable metadata, there are multiple standards, such as the Dublin Core (used by the 4TU.centre, see [this link](http://www.dcc.ac.uk/resources/subject-areas/social-science-humanities) for more standards.
 
 ## FAIR data
-Making your data Findable, Accessible, Interoperable and Reusable (FAIR) facilitates knowledge discovery by assisting humans and machines in their discovery of and access to the data. The aim of the university is to make all data produced by scientific research FAIR, aiding the reproducibility of scientific findings, contributing to the open science movement. See also [this video](https://vimeo.com/162062013)
+Making your data Findable, Accessible, Interoperable and Reusable (FAIR) facilitates knowledge discovery by assisting humans and machines in their discovery of and access to the data. The aim of the university is to make all data produced by scientific research FAIR, aiding the reproducibility of scientific findings, contributing to the open science movement. See also [this video](https://vimeo.com/162062013). Please note: FAIR data does not necessarily mean that it is publicly available: data should be **as open as possible, as closed as necessary**.
 
 #### Findable by both humans and machines
 The dataset should be findable with a google datasets search: 
@@ -202,12 +215,12 @@ Use Secure printing to print confidential information via a password: The printe
 #### Aim not to store data on local drives only
 Instead, use the J-drive, which is automatically backed-up and secured through the university. Also, the J-drive is shared, so if you suddenly leave the university for some reason, you will not have any data left in an account that cannot be accessed. 
 
-- Use [Workgroups](J:\Workgroups\) for collaborations with other departments
-- For students, use [Students/FSW](J:\Students\FSW\)
-- Use [ResearchData](J:\ResearchData\FSW\) for all your research data, both raw and processed files
+- Use Workgroups for collaborations with other departments
+- For students, use Students/FSW
+- Use ResearchData for all your research data, both raw and processed files
 - If you are processing data on your local Data drive, be sure to back it up at the J-drive
 - Don’t use your P: drive to store data long-term: if you leave the university suddenly, your data will not be accessible for others!
-
+- A general rule of thumb is to have **2 or 3 copies** of your files, stored on at leat **2 different storage media**, in different locations
 
 #### Do not store identifiable information on personal devices
 - It is only permitted to work with un-pseudonymized data when this is necessary for data collection, processing or planning and, officially, only when participants have given their permission
@@ -267,7 +280,7 @@ Whenever you process sensitive data (or something changes regarding this), such 
   - Re-used, e.g., multiple datasets combined (pay attention for identifiability)
 
 ## The Data Management Plan (DMP)
-Since 2016, all research projects must have a **data management plan (DMP)** before starting a project. The DMP stimulates you to think about how you will manage your data both during and after your project. This is also important when you are considering open data. The university has a [DMP template](https://www.library.universiteitleiden.nl/binaries/content/assets/ul2ub/research--publish/cds/rdm-reference-materials/template-datamanagementplan_leiden_v3.2.docx), but your funder may also require you to use one of theirs, or use an [online tool](https://dmponline.dcc.ac.uk/). If your research is funded by the NWO, you have to use one of their approved templates and get feedback from an expert (e.g., the CDS at Leiden University). The University Library has a special team to help you write this and also gives trainings
+Since 2016, all research projects must have a **data management plan (DMP)** before starting a project. The DMP stimulates you to think about how you will manage your data both during and after your project, all to make the data FAIR. The university has a [DMP template](https://www.library.universiteitleiden.nl/binaries/content/assets/ul2ub/research--publish/cds/rdm-reference-materials/template-datamanagementplan_leiden_v3.2.docx), but your funder may also require you to use one of theirs, or use an [online tool](https://dmponline.dcc.ac.uk/). If your research is funded by the NWO, you have to use one of their approved templates and get feedback from an expert (e.g., the CDS at Leiden University). The University Library has a special team to help you write this and also gives trainings
 
 **Why DMP?**
 
@@ -326,8 +339,23 @@ Since 2016, all research projects must have a **data management plan (DMP)** bef
 -	Ask what repository/storage system others with similar data are using
 -	Think about how you will grant access: will people always have to ask permission or can the data be open?
 -	Ensure the data is documented so that others can understand it later
+- Update the document whenever you are deviating from earlier versions
 
 
 ## Resources
+- FAIR initiatives: [GOFAIR](https://www.go-fair.org/) and [Research Data Alliance (RDA)](https://www.rd-alliance.org/)
+- [FAIRsharing](https://fairsharing.org/), a resource for disciplne-specific metadata standards
 - [The Turing Way - data management](https://the-turing-way.netlify.com/rdm/rdm.html)
 - [Data security tips by Leiden University](https://www.medewerkers.universiteitleiden.nl/ict/privacy-en-gegevensbescherming/veilig-digitaal-werken/informatiebeveiliging/sociale-wetenschappen/psychologie?cf=sociale-wetenschappen&cd=psychologie)
+- Core requirements for the DMP (p.11+12) & criteria voor trustworthy repositories (p.15-16) [NWO and others](https://www.scienceeurope.org/media/jezkhnoo/se_rdm_practical_guide_final.pdf)
+- [Info about data management](https://www.uu.nl/en/research/research-data-management/guides/storing-and-preserving-data) (storing, archiving, versioning, data structure, etc.)
+- [File naming](https://speakerdeck.com/jennybc/how-to-name-files)
+- [Tidy data](https://vita.had.co.nz/papers/tidy-data.pdf)
+- [Goodtables](http://try.goodtables.io/): test your table!
+- [Data organization in spreadsheets](https://peerj.com/preprints/3183/)
+- Getting started with [data dictionaries](https://osf.io/vd4y3/)
+- Recommended [data formats (DANS)](https://dans.knaw.nl/en/deposit/information-about-depositing-data/before-depositing/file-formats)
+- More info on [data management](https://www.openaire.eu/raw-data-backup-and-versioning)
+- The [costs of data mangement](https://www.uu.nl/en/research/research-data-management/guides/costs-of-data-management)
+- Leiden University [RDM guidelines](https://www.organisatiegids.universiteitleiden.nl/binaries/content/assets/sociale-wetenschappen/psychologie/organisatiegids/research-data-management-regulations-l)
+- [Info about metadata](https://www.uu.nl/en/research/research-data-management/guides/storing-and-preserving-data/data-description-in-practice)

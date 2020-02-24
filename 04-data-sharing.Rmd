@@ -58,6 +58,7 @@ This is an often used method now, but is **not very findable or accessible**, es
 
 ###	Publishing in data repositories
 For example:
+
 -	[DANS DataverseNL](https://dataverse.nl/) (Dutch)
  - For all data and materials accompanying a publication
  - Not suitable for large or publication-independent datasets (max zip file size 10 GB)
@@ -115,7 +116,7 @@ Privacy resources:
 - [Privacy dos and donts](https://www.edugroepen.nl/sites/RDM_platform/RDM_Blog/SiteAssets/Presentatie%20Jacques_Flores_UU.pdf)
 - [Guide for sensitive data](https://www.openaire.eu/sensitive-data-guide)
 - [GDPR info](https://www.uu.nl/en/research/research-data-management/guides/handling-personal-data)
-- Info about Informed consents](https://www.uu.nl/en/research/research-data-management/guides/informed-consent-for-data-sharing)
+- [Info about Informed consents](https://www.uu.nl/en/research/research-data-management/guides/informed-consent-for-data-sharing)
 - [Legal instruments protecting data (agreements)](https://www.uu.nl/en/research/research-data-management/guides/legal-instruments-and-agreements)
 - [OpenBrainConsent](https://open-brain-consent.readthedocs.io/en/stable/), a bottom-up initiative to make sense of the GDPR in sharing MRI data
 
@@ -124,6 +125,13 @@ Data sharing:
 - [Data management and sharing tools](https://digitalscholarship.nl/rds/faculty/faculty-of-social-and-behavioural-sciences/) (list compiled by the Leiden University Library)
 - [The Turing Way - open data](https://the-turing-way.netlify.com/open_research/01/opendata.html)
 - [The Donders repository](https://data.donders.ru.nl/?1)
+- [Utrecht University info about data sharing](https://www.uu.nl/en/research/research-data-management/guides/publishing-and-sharing-data)
+- [FAQ about data sharing (Donders Institute)](https://data.donders.ru.nl/doc/help/faq/publish-data.html?0#faq-dsc-prepare)
+- List of [certified repositories](https://www.coretrustseal.org/why-certification/certified-repositories/) / [other repositories](http://v2.sherpa.ac.uk/opendoar/)
+- [Decision aid choosing a repository (not exhaustive)](https://www.uu.nl/en/research/research-data-management/tools-services/tools-for-storing-and-managing-data/decision-aid-data-repositories)
+- Example data use agreement (Donders): [1](https://data.donders.ru.nl/doc/dua/?0) and [2](https://data.donders.ru.nl/doc/dua/RU-DI-HD-1.0.html?1)
+- [Instructions for DataverseNL](https://www.organisatiegids.universiteitleiden.nl/binaries/content/assets/sociale-wetenschappen/psychologie/organisatiegids/instruction-for-archiving-publication-packages.pdf)
+- Utrecht Data School: [Data Ethics Decision Aid (DEDA)](https://survey2.hum.uu.nl/index.php/778777?newtest=Y&lang=en) - questionnaire to help you think about privacy and ethics in your research 
 
 ## Instructions for uploading data into Neurovault
 [See this file for the instructions]('_bookdown_files/_main_files/20191210_Instructions_Neurovault.docx')
