@@ -3,6 +3,22 @@
 Eduard schrijft preface: info lab + links + foto; en doel van de manual  
 Dan hoofdstuk over how to use
 
+Contents of this lab manual:
+1. How to use this lab manual (Eduard)
+2. Introduction: mission and vision of our lab (yet to be developed)
+3. Publishing open access (Dorien): information and how-to
+4. Data sharing (Dorien): information and how-to
+5. Research data management (Dorien): information and how-to
+
+Yet to be developed (suggestions)
+6. Open software and code
+7. Fostering transparency: prergistration, preprint Eduard, transparency checklist, COBIDAS, other reporting guidelines
+8. Science communication and citizen science
+9. Collaboration tools: Github, Markdown, Jupyter Notebooks, Docker/Binder, social media (?)
+10. Our research culture (lab practices, celebrating mistakes, labsprints, code of conduct)
+
+#####
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
