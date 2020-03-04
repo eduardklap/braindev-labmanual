@@ -26,26 +26,26 @@ Not only the structure of your folders is important to keep organized, but also 
 - Create a data dictionary
 - Don’t include calculations in the raw data files
 - Don’t use font color or highlighting as data
-- Choose good names for things
-- Make backups
+- Choose good names for things, preferably use variable names standard in your field
 - Use data validation to avoid data entry mistakes
 - Save the data in plain text files
 
 
-To be discussed:
+### Brain Imaging Data Structure
+For neural data (MRI, EEG, etc.), we aim to use the BIDS format. BIDS is a way to organize, name and describe your neural data. The advantage of BIDS is that it is machine-readable and makes (re)doing analyses on datasets from other researchers much easier. Moreover, data in the BIDS format is almost always deidentified, i.e., MRI data is defaced, the data do not contain participant names, etc.
 
-- Folder structure and example(s)
-- Standard, such as BIDS
-- Tutorial(s) BIDS
+**Insert tutorial for BIDS?**
 
 ## Metadata
 In order for a later you ánd others to understand what your data are about, you have to provide **metadata**. Metadata is a fancy word for information *about* your data that increase the understanding of the dataset. This kind of information may be:
+
 - who created and analyzed the data (contact info)
 - what was collected (which tasks, for example)
 - where was it collected
 - how was it created
 - why was it created (see instructions publication packages)
 - who was excluded and why, which files were corrupted, other exceptions to the standard pipeline
+- what do variables in your data mean, which levels can they take, etc.: a data dictionary
 
 It is easiest to provide **readme.txt** files with additional information about the data or project, analysis logs, data dictionaries, overviews (e.g., which data were collected when), etc. These files are *human-readable*, allowing others to quickly understand what is going on. One step further is to create *machine-readable* metadata. In the BIDS-format, these are the .json files that provide background information on the files in question. For machine-readable metadata, there are multiple standards, such as the Dublin Core (used by the 4TU.centre, see [this link](http://www.dcc.ac.uk/resources/subject-areas/social-science-humanities) for more standards.
 
@@ -112,11 +112,19 @@ To do:
 
 
 ## Version control
-Version control is something that is not often used yet, but extremely important when managing a lot of data. Keeping track of the different versions of your files allows you to see:
+Version control is something that is not often used yet, but extremely important when managing data, writing code or even writing papers, especially when doing this collaboratively. Keeping track of the different versions of your files allows you to:
 
-- Which version is the most recent
-- Which version is the untouched, "raw" version (very important for raw data)
-- What happened between the raw and final versions
+- see which version is the most recent
+- see which version is the untouched, "raw" version (very important for raw data)
+- see what happened between the raw and final versions
+- revert to previous versions if something went wrong in the most recent version
+- recover files if you lose them
+- experiment with different versions (esp. with code) and choose the version that works best
+
+The basic workflow looks like this:
+1. Create a file
+2. Work on the file (create, delete, correct)
+3. Create a snapshot of the work and describe what you have done so far (in Git, this is called a commit with a commit message attached to it)
 
 ### How can you use version control effectively?
 - Use git (e.g., via [github](https://github.com/), [gitlab](https://gitlab.com/gitlab-org), or [bitbucket](https://bitbucket.org/)), this is an excellent version control system for small files, originally meant for collaboratively writing code and originally commandline-based. However, git can also be used without having to code at all, e.g., in [GitKraken](https://www.gitkraken.com/) or [Rstudio](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN). This bookdown is also created using git! See [this document](https://docs.google.com/document/d/1FZUNvDnc4Kl1IizuASLMNocahSvwZQ14Tlu3rlMaRb4/edit?usp=sharing) for one of the many existing tutorials on how to use git in GitKraken. 
@@ -346,6 +354,7 @@ Since 2016, all research projects must have a **data management plan (DMP)** bef
 - FAIR initiatives: [GOFAIR](https://www.go-fair.org/) and [Research Data Alliance (RDA)](https://www.rd-alliance.org/)
 - [FAIRsharing](https://fairsharing.org/), a resource for disciplne-specific metadata standards
 - [The Turing Way - data management](https://the-turing-way.netlify.com/rdm/rdm.html)
+- [The Turing Way - version control](https://the-turing-way.netlify.com/version_control/version_control)
 - [Data security tips by Leiden University](https://www.medewerkers.universiteitleiden.nl/ict/privacy-en-gegevensbescherming/veilig-digitaal-werken/informatiebeveiliging/sociale-wetenschappen/psychologie?cf=sociale-wetenschappen&cd=psychologie)
 - Core requirements for the DMP (p.11+12) & criteria voor trustworthy repositories (p.15-16) [NWO and others](https://www.scienceeurope.org/media/jezkhnoo/se_rdm_practical_guide_final.pdf)
 - [Info about data management](https://www.uu.nl/en/research/research-data-management/guides/storing-and-preserving-data) (storing, archiving, versioning, data structure, etc.)
