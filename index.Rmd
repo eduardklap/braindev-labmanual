@@ -1,22 +1,12 @@
 ---
 title: "Brain and Development Erasmus University, Lab Manual"
 author: "Dorien Huijser, Eduard Klapwijk, et al."
-date: "`r Sys.Date()`"
-knit: "bookdown::render_book"
-documentclass: book
-#bibliography: [book.bib, packages.bib]
-biblio-style: apalike
-link-citations: yes
-colorlinks: yes
-lot: yes
-lof: yes
-fontsize: 12pt
-monofont: "Source Code Pro"
-monofontoptions: "Scale=0.7"
 site: bookdown::bookdown_site
-description: "A lab manual for the Brain and Development Research Center."
-github-repo: eduardklap/braindev-labmanual
-  
+documentclass: book
+output:
+  bookdown::gitbook: default
+  #bookdown::pdf_book: default
+        
 ---
 
 ```{r setup, include=FALSE}
@@ -50,4 +40,20 @@ knitr::include_graphics("figures/B&D BBQ 2017.jpg")
 
 Eduard Klapwijk, Leiden 5 February 2020
 
-
+### Set-up like in bookdown -> does not work (duplicate in set-up (?))
+title: "Brain and Development Erasmus University, Lab Manual"
+author: "Dorien Huijser, Eduard Klapwijk, et al."
+knit: "bookdown::render_book"
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+colorlinks: yes
+lot: yes
+lof: yes
+fontsize: 12pt
+monofont: "Source Code Pro"
+monofontoptions: "Scale=0.7"
+site: bookdown::bookdown_site
+description: "A lab manual for the Brain and Development Research Center."
+github-repo: eduardklap/braindev-labmanual
