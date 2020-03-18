@@ -297,7 +297,9 @@ Since 2016, all research projects must have a **data management plan (DMP)** bef
 -	Record how your data was managed during your research
 -	Written using a template from Leiden University or your funder
 
-![The Research Data lifecycle (source: UK data archive]('figures/Research_Data_Lifecycle_.png')
+```{r pressure, echo=FALSE, fig.cap="The research data lifecycle (source: UK data archive)", out.width = '50%', fig.align='center'}
+knitr::include_graphics("figures/Research_Data_Lifecycle_.png")
+```
 
 ### Components of a DMP
 - Cover information
