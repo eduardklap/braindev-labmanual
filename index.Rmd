@@ -16,7 +16,10 @@ Currently, a lot of useful information about setting up projects, data managemen
 
 We use R Bookdown [(website)](https://bookdown.org/), an extension of R Markdown, to make this manual. It is a great tool: we can write text, include code chunks and figures. Also photos:
 
-![most recent lab picture on J:](figures/B&D BBQ 2017.jpg)
+```{r pressure, echo=FALSE, out.width = '100%',fig.align='center'}
+knitr::include_graphics("figures/B&D BBQ 2017.jpg")
+```
+
 
 Eduard Klapwijk, Leiden 5 February 2020
 
