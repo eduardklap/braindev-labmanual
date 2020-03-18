@@ -1,4 +1,4 @@
-# Publishing open access
+# Publishing open access {.tabset}
 In the Brain and Development Research Center, we aim to make **all** of our publications open access via one or more of the routes described below (green route and sometimes the golden route, preprints are published whenever deemed necessary). Below, you can find background information and information for each route to open access publishing.
 
 ## Background
@@ -107,3 +107,4 @@ Often times the journal requires you to choose from several creative commons lic
 - A repository for open access books can be found in [OAPEN](http://oapen.org/home) and via [DOAB](https://www.doabooks.org/doab?uiLanguage=en) (Directory for Open Access Books)
 - [The Turing Way on open access](https://the-turing-way.netlify.com/open_research/04/openaccess.html)
 
+# {-}

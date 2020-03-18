@@ -82,7 +82,7 @@ See for an overview of data repositories https://www.re3data.org/
 ###	Publishing a datapaper
 You can also publish a dataset in a data journal without the need to add it to a publication. In a datapaper, you describe the data and the methods of collecting them, without the need to analyze them. This way you will get a publication out of your data irrespective of whether or not you publish results, increasing the impact of your research. However, it often requires that you make all described data public, because the aim of such publications is to provide access to high quality datasets and to facilitate reuse. Also, most journals have some policy in which repository you should deposit the data accompanying the datapaper. Note that a datapaper will be peer-reviewed just as well as a regular article.
 
-![List of data journals]('_bookdownfiles/_main_files/data-journals.Rmd')
+![List of data journals] # **INSERT LINK TO DATA JOURNALS DOC**
 
 ### Sharing case-by-case
 For data that cannot be shared publicly, you can sometimes still share the data case-by-case. This can be the case:

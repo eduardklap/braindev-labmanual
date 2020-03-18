@@ -1,14 +1,41 @@
 ---
 title: "Brain and Development Erasmus University, Lab Manual"
 author: "Dorien Huijser, Eduard Klapwijk, et al."
-site: bookdown::bookdown_site
+date: "`r Sys.Date()`"
+knit: "bookdown::render_book"
 documentclass: book
-output:
-  bookdown::gitbook: default
-  #bookdown::pdf_book: default
+#bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+colorlinks: yes
+lot: yes
+lof: yes
+fontsize: 12pt
+monofont: "Source Code Pro"
+monofontoptions: "Scale=0.7"
+site: bookdown::bookdown_site
+description: "A lab manual for the Brain and Development Research Center."
+github-repo: eduardklap/braindev-labmanual
+  
 ---
 
-# Hello Readers
+```{r setup, include=FALSE}
+options(
+  htmltools.dir.version = FALSE, formatR.indent = 2,
+  width = 55, digits = 4, warnPartialMatchAttr = FALSE, warnPartialMatchDollar = FALSE
+)
+local({
+  r = getOption('repos')
+  if (!length(r) || identical(unname(r['CRAN']), '@CRAN@'))
+    r['CRAN'] = 'https://cran.rstudio.com' 
+  options(repos = r)
+})
+lapply(c('DT', 'citr', 'formatR', 'svglite'), function(pkg) {
+  if (system.file(package = pkg) == '') install.packages(pkg)
+})
+```
+
+# Hello Readers {-}
 
 This is a first start of a lab manual for the Brain and Development Research Center [(website)](http:www.brainanddevelopment.nl). The aim is to gather a lot of information how we work or how we *want to work* in one place in a searchable format. The easiest way is to open the html version of this document in a browser (note: this could be online but we can keep it local if preferred).  
 
